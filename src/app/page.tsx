@@ -1,12 +1,40 @@
+import { Header, Footer } from '@/components';
+import {
+  Hero,
+  BluetoothProblem,
+  BluetoothDiscover,
+  ConnectEffortless,
+  CustomerReview,
+  DecentralizedOS,
+  DownloadSendContact,
+  FAQ,
+  JoinMission,
+  SellStreamlined,
+  SendContactBenefits,
+  ShowCasingProduct,
+  SolutionForSociety
+} from '@/components/sections';
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1 className='text-4xl font-bold text-blue-700'>
-        Building send contact
-      </h1>
-      <p>
-        Let&apos;s see if this works
-      </p>
-    </main>
+    <>
+      <Header />
+      <main className=''>
+        <Hero />
+        <DownloadSendContact />
+        <ConnectEffortless />
+        <BluetoothDiscover />
+        <ShowCasingProduct />
+        <SellStreamlined />
+        <SendContactBenefits />
+        <DecentralizedOS />
+        <BluetoothProblem />
+        <SolutionForSociety />
+        <JoinMission />
+        <CustomerReview />
+        <FAQ />
+      </main>
+      <Footer />
+    </>
   );
 }
