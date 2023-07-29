@@ -4,6 +4,9 @@ export default function Home() {
       <h1 className='text-4xl font-bold text-blue-700'>
         Building send contact
       </h1>
+      <p>
+        Let&apos;s see if this works
+      </p>
     </main>
   );
 }
