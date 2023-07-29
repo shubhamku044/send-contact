@@ -9,7 +9,7 @@ const styles = {
 
 const Header = () => {
   return (
-    <nav className='bg-gradient-to-b from-black/90 to-black/5'>
+    <nav className='bg-gradient-to-b from-black/90 to-black/5 fixed w-full top-0 left-0'>
       <div className='flex items-center justify-between max-w-7xl mx-auto p-4'>
         <Link href={'/'}>
           <div className='relative w-40' style={{ aspectRatio: '188.6/42.1' }}>
