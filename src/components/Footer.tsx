@@ -80,7 +80,12 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className='py-8 bg-gray-dark flex items-center justify-center'>
+      <div
+        className='py-8 bg-gray-dark flex items-center justify-center'
+        style={{
+          borderTop: '1px solid #242E3D'
+        }}
+      >
         <div className='text-base flex items-center gap-2'>
           <FaRegCopyright className='w-4 h-4' /> Sendcontact 2023.
         </div>
