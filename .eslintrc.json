@@ -56,10 +56,6 @@
         "exceptAfterSingleLine": true
       }
     ],
-    "linebreak-style": [
-      "error",
-      "unix"
-    ],
     "indent": [
       "error",
       2,
