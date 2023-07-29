@@ -1,8 +1,43 @@
+import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 const ShowCasingProduct = () => {
   return (
-    <div>ShowCasingProduct</div>
+    <section className='bg-gray-medium text-white'>
+      <div className='section flex items-center justify-around'>
+        <div className='left'>
+          <Image src={'/phone-and-hand.png'}
+            alt='Send' className='max-w-[500px]'
+            height={300}
+            width={400}
+            style={{ transform: 'scaleX(-1)', transformOrigin: 'top' }}
+          />
+        </div>
+        <div className='right max-w-2xl flex items-start justify-start flex-col  '>
+          <h1 className='text-white text-5xl font-bold'>
+            <span className='text-custom-blue'>Present</span>&nbsp;
+            - Showcasing Your<br />
+            Best Self And Products
+          </h1>
+          <div className='h-1 bg-custom-blue rounded w-32 mt-4 mb-4' />
+          <p className='text-left text-lg'>
+            The SendContact App is not just about networking; it also empowers you to present the
+            best of yourself and your products. It serves as your all-in-one hub, offering social
+            media functionalities similar to popular platforms like Instagram, LinkedIn, and YouTube.
+            You can showcase your photos, videos, network with like-minded professionals, and even
+            share large files. The best part is that you retain complete control over your content –
+            no one can remove it without your permission. SendContact puts you in the driver&apos;s seat
+            when it comes to presenting yourself and your business in the best light possible.
+          </p>
+          <Link href={`#`}>
+            <button className='bg-custom-blue text-base px-14 py-2 mt-4 text-white rounded-md'>
+              Download SendContact
+            </button>
+          </Link>
+        </div>
+      </div>
+    </section >
   );
 };
 
