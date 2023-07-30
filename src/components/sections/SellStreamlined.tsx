@@ -10,17 +10,18 @@ const SellStreamlined = () => {
           <h1 className='text-3xl sm:text-5xl font-bold' style={{ lineHeight: '1.2' }}>
             <span className='text-custom-blue'>Sell
             </span> - Streamlined Online <br />
-             Sales Made Simple
+            Sales Made Simple
           </h1>
           <div className='h-1 bg-custom-blue rounded w-32 mt-4 mb-4' />
-          <p className='text-left text-base sm:text-lg'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Inventore mollitia consequuntur, repellat provident soluta harum alias facere natus praesentium
-             veritatis ad, accusamus ex. Alias, sunt. Eius qui beatae, aut quisquam impedit accusamus
-              dolorem libero earum eos id minus magni veritatis alias velit veniam cum quidem 
-              ipsam animi illum ut rerum adipisci! Quis cum dolore, sunt dolorum quia accusamus 
-              distinctio voluptates reprehenderit dolorem eius fugit nostrum quo minima excepturi,
-               similique rem iusto maxime fugiat pariatur placeat. Tempora quas, voluptatibus numquam,
+          <p className='text-left tracking-tight sm:text-lg'>
+            Selling products or services online has never been easier with the SendContact App.
+            Within minutes, you can add an item for sale, set up a checkout button, and establish
+            your online shop. Say goodbye to the need for web developers or complex payment setups.
+            We bring powerful sales tools right to your fingertips, streamlining the entire sales
+            process. Additionally, we offer an exclusive payment process called &quot;Bluetooth Pay,&quot;
+            which allows you to make and receive payments using Bluetooth technology. With Bluetooth Pay,
+            you can enjoy a convenient and secure payment experience. Whether you&apos;re a small business
+            or a budding entrepreneur, SendContact simplifies your online sales journey.
           </p>
           <button className='bg-custom-blue text-base px-14 py-2 mt-4 text-white rounded-md mx-auto sm:mx-0'>
             Download SendContact
