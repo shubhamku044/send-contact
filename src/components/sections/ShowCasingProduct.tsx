@@ -5,7 +5,7 @@ import React from 'react';
 const ShowCasingProduct = () => {
   return (
     <section className='bg-gray-medium text-white'>
-      <div className='section flex items-center justify-around'>
+      <div className='section flex flex-col items-center md:justify-around md:flex-row'>
         <div className='left'>
           <Image src={'/phone-and-hand.png'}
             alt='Send' className='max-w-[500px]'
@@ -15,13 +15,13 @@ const ShowCasingProduct = () => {
           />
         </div>
         <div className='right max-w-2xl flex items-start justify-start flex-col  '>
-          <h1 className='text-white text-5xl font-bold'>
+          <h1 className='text-white text-3xl sm:text-5xl font-bold'>
             <span className='text-custom-blue'>Present</span>&nbsp;
             - Showcasing Your<br />
             Best Self And Products
           </h1>
           <div className='h-1 bg-custom-blue rounded w-32 mt-4 mb-4' />
-          <p className='text-left text-lg'>
+          <p className='text-left text-base sm:text-lg'>
             The SendContact App is not just about networking; it also empowers you to present the
             best of yourself and your products. It serves as your all-in-one hub, offering social
             media functionalities similar to popular platforms like Instagram, LinkedIn, and YouTube.
