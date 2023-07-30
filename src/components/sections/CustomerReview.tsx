@@ -106,7 +106,14 @@ const CustomerReview = () => {
             {data.map((item, id) => {
               return (
                 <div className='item' key={id}>
-                  <SwiperSlide className="swiper__slide">
+                  <SwiperSlide
+                    className="swiper__slide"
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center'
+                    }}
+                  >
                     <div className='flex flex-col items-center w-72 h-96 p-10 rounded-lg'
                       style={{
                         background: 'linear-gradient(135deg, #1A202A 0%, #101319 100%)',
