@@ -96,7 +96,7 @@ const CustomerReview = () => {
                 </div>
               );
             })}
-            <div className='btns flex w-[100%] justify-center gap-6 my-8'>
+            <div className='btn flex w-[100%] justify-center gap-6 my-8'>
               <div className="swiper__arrow h-[40px] w-[40px] bg-gray-light rounded-full flex justify-center items-center" onClick={preHandler}>
                 <AiOutlineArrowLeft/>
               </div>
