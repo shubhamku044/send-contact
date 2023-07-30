@@ -4,8 +4,8 @@ import React from 'react';
 const BluetoothProblem = () => {
   return (
     <section className='bg-gray-medium text-white'>
-      <div className='section flex items-center justify-evenly'>
-        <div className='left text-5xl max-w-2xl flex items-start justify-start flex-col '>
+      <div className='section flex flex-col lg:flex-row items-center justify-evenly'>
+        <div className='left text-5xl max-w-2xl flex flex-col lg:flex-row items-start justify-start'>
           <h1 className='font-bold'>
             <span className='text-custom-blue'>The Problem</span>&nbsp;
             With Bluetooth Technology And Our Solution
