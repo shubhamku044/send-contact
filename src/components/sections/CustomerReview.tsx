@@ -3,7 +3,6 @@ import { Swiper, SwiperClass, SwiperSlide } from 'swiper/react';
 import React, { useRef, useState } from 'react';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { Pagination } from 'swiper/modules';
 import Image from 'next/image';
 import { AiOutlineArrowRight } from 'react-icons/ai';
 import { AiOutlineArrowLeft } from 'react-icons/ai';
@@ -66,7 +65,6 @@ const CustomerReview = () => {
   };
   return (
     <div className='bg-gray-medium text-white'>
-
       <section className='section'>
         <h1 className='text-5xl text-center mb-8'>Customer Reviews</h1>
         <>
@@ -111,10 +109,10 @@ const CustomerReview = () => {
               );
             })}
             <div className='btn flex w-[100%] justify-center gap-6 my-8'>
-              <div className="swiper__arrow h-[40px] w-[40px] bg-gray-light rounded-full flex justify-center items-center" onClick={preHandler}>
+              <div className="swiper__arrow h-[40px] w-[40px] bg-gray-light hover:bg-custom-blue duration-300 rounded-full flex justify-center items-center" onClick={preHandler}>
                 <AiOutlineArrowLeft />
               </div>
-              <div className="swiper__arrow h-[40px] w-[40px] bg-custom-blue rounded-full flex justify-center items-center" onClick={nextHandler}>
+              <div className="swiper__arrow h-[40px] w-[40px] bg-gray-light hover:bg-custom-blue duration-300 rounded-full flex justify-center items-center" onClick={nextHandler}>
                 <AiOutlineArrowRight />
               </div>
             </div>
