@@ -39,11 +39,11 @@ const SellStreamlined = () => {
               </div>
             </Link></div>
         </div>
-        <div className='left '>
+        <div className='left'>
           <Image src={'/phone-and-hand.png'}
             alt='Send' className='bg-blend max-w-[32rem]'
-            height={300}
-            width={400}
+            height={280}
+            width={380}
           />
         </div>
       </div>

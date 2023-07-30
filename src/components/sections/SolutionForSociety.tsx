@@ -4,13 +4,14 @@ import React from 'react';
 const SolutionForSociety = () => {
   return (
     <section>
-      <div className='section flex items-center gap-8'>
-        <div className='left '>
-          <Image src={'/mountain.jpeg'}
-            alt='Send' className='bg-blend max-w-[32rem]'
-            height={500}
-            width={500}
-          />
+      <div className='section flex flex-col-reverse md:flex-row items-center gap-8'>
+        <div className='left'>
+          <div style={{ aspectRatio: '373/282' }} className='relative h-72'>
+            <Image src={'/mountain.jpeg'}
+              alt='Send' className='bg-blend'
+              fill={true}
+            />
+          </div>
         </div>
         <div className='right max-w-2xl flex items-start justify-start flex-col'>
           <h1 className='text-5xl font-bold' style={{ lineHeight: '1.2' }}>
