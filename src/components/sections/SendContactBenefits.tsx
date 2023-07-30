@@ -2,7 +2,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { Swiper, SwiperClass, SwiperSlide } from 'swiper/react';
-import  { useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai';
@@ -14,7 +14,7 @@ interface CardProps {
 const data = [
   {
     id: 1,
-    title: 'abcde xyzt', icon:'/benefits/Scalable.svg', desc: 'lorem ipsum dolor sit amet lorem reso saopaf ain afaagi asf asfasfnaadfg sdfd sdfg'
+    title: 'abcde xyzt', icon: '/benefits/Scalable.svg', desc: 'lorem ipsum dolor sit amet lorem reso saopaf ain afaagi asf asfasfnaadfg sdfd sdfg'
   },
   {
     id: 2,
@@ -48,12 +48,6 @@ const data = [
   },
 ];
 
-// const Card = ({ title, description, icon }: CardProps) => {
-//   return (
-   
-//   );
-// };
-
 const SendContactBenefits = () => {
   const [swiperRef, setSwiperRef] = useState<SwiperClass>();
   const nextHandler = () => {
@@ -74,7 +68,7 @@ const SendContactBenefits = () => {
               slidesPerView={3}
               spaceBetween={30}
               loop={true}
-              // centeredSlides={true}
+              centeredSlides={true}
               pagination={{
                 clickable: true,
               }}
@@ -102,7 +96,14 @@ const SendContactBenefits = () => {
               {data.map((item, id) => {
                 return (
                   <div className='item' key={id}>
-                    <SwiperSlide className="swiper__slide">
+                    <SwiperSlide
+                      className="swiper__slide"
+                      style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center'
+                      }}
+                    >
                       <div className='w-72 p-10 rounded-lg flex flex-col items-center'
                         style={{
                           background: 'linear-gradient(135deg, #1A202A 0%, #101319 100%)',
@@ -127,7 +128,7 @@ const SendContactBenefits = () => {
               </div>
             </Swiper>
           </>
-         
+
         </div>
         <p className='text-center text-gray-400 mt-8 text-2xl'>
           Whether you&apos;re a new business owner or an experienced entrepreneur, our app is the perfect solution

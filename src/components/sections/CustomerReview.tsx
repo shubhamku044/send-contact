@@ -1,6 +1,6 @@
 'use client';
 import { Swiper, SwiperClass, SwiperSlide } from 'swiper/react';
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import Image from 'next/image';
@@ -9,49 +9,52 @@ import { AiOutlineArrowLeft } from 'react-icons/ai';
 const data = [
   {
     id: 1,
-    title: 'abcde xyzt', role: 'author', ratings: 'start', desc: 'lorem ipsum dolor sit amet lorem reso saopaf ain afaagi asf asfasfnaadfg sdfd sdfg'
+    title: 'abcde xyzt',
+    role: 'author',
+    ratings: 'start',
+    desc: 'lorem ipsum dolor sit amet lorem reso saopaf ain afaagi asf asfasfnaadfg sdfd sdfg lorem ipsum dolor sit amet lorem reso saopaf ain afaagi asf asfasfnaadfg sdfd sdfg'
   },
   {
     id: 2,
     title: 'abcde xyzt',
     role: 'author',
     ratings: 'start',
-    desc: 'lorem ipsum dolor sit amet lorem reso saopaf ain afaagi asf asfasfnaadfg sdfd sdfg'
+    desc: 'lorem ipsum dolor sit amet lorem reso saopaf ain afaagi asf asfasfnaadfg sdfd sdfg lorem ipsum dolor sit amet lorem reso saopaf ain afaagi asf asfasfnaadfg sdfd sdfg'
   },
   {
     id: 3,
     title: 'abcde xyzt',
     role: 'author',
     ratings: 'start',
-    desc: 'lorem ipsum dolor sit amet lorem reso saopaf ain afaagi asf asfasfnaadfg sdfd sdfg'
+    desc: 'lorem ipsum dolor sit amet lorem reso saopaf ain afaagi asf asfasfnaadfg sdfd sdfg lorem ipsum dolor sit amet lorem reso saopaf ain afaagi asf asfasfnaadfg sdfd sdfg'
   },
   {
     id: 4,
     title: 'abcde xyzt',
     role: 'author',
     ratings: 'start',
-    desc: 'lorem ipsum dolor sit amet lorem reso saopaf ain afaagi asf asfasfnaadfg sdfd sdfg'
+    desc: 'lorem ipsum dolor sit amet lorem reso saopaf ain afaagi asf asfasfnaadfg sdfd sdfg lorem ipsum dolor sit amet lorem reso saopaf ain afaagi asf asfasfnaadfg sdfd sdfg'
   },
   {
     id: 5,
     title: 'abcde xyzt',
     role: 'author',
     ratings: 'start',
-    desc: 'lorem ipsum dolor sit amet lorem reso saopaf ain afaagi asf asfasfnaadfg sdfd sdfg'
+    desc: 'lorem ipsum dolor sit amet lorem reso saopaf ain afaagi asf asfasfnaadfg sdfd sdfg lorem ipsum dolor sit amet lorem reso saopaf ain afaagi asf asfasfnaadfg sdfd sdfg'
   },
   {
     id: 6,
     title: 'abcde xyzt',
     role: 'author',
     ratings: 'start',
-    desc: 'lorem ipsum dolor sit amet lorem reso saopaf ain afaagi asf asfasfnaadfg sdfd sdfg'
+    desc: 'lorem ipsum dolor sit amet lorem reso saopaf ain afaagi asf asfasfnaadfg sdfd sdfg lorem ipsum dolor sit amet lorem reso saopaf ain afaagi asf asfasfnaadfg sdfd sdfg'
   },
   {
     id: 7,
     title: 'abcde xyzt',
     role: 'author',
     ratings: 'start',
-    desc: 'lorem ipsum dolor sit amet lorem reso saopaf ain afaagi asf asfasfnaadfg sdfd sdfg'
+    desc: 'lorem ipsum dolor sit amet lorem reso saopaf ain afaagi asf asfasfnaadfg sdfd sdfg lorem ipsum dolor sit amet lorem reso saopaf ain afaagi asf asfasfnaadfg sdfd sdfg'
   },
 ];
 
@@ -64,7 +67,11 @@ const CustomerReview = () => {
     swiperRef?.slidePrev();
   };
   return (
-    <div className='bg-gray-medium text-white'>
+    <div className='text-white'
+      style={{
+        background: 'linear-gradient(180deg, #242E3D 0%, #161B23 100%)'
+      }}
+    >
       <section className='section'>
         <h1 className='text-5xl text-center mb-8'>Customer Reviews</h1>
         <>
@@ -85,9 +92,13 @@ const CustomerReview = () => {
                 slidesPerView: 2,
                 spaceBetween: 30,
               },
-              1024: {
+              996: {
                 slidesPerView: 3,
-                spaceBetween: 50,
+                spaceBetween: 30,
+              },
+              1024: {
+                slidesPerView: 4,
+                spaceBetween: 10,
               },
             }}
             className="mySwiper"
@@ -95,8 +106,15 @@ const CustomerReview = () => {
             {data.map((item, id) => {
               return (
                 <div className='item' key={id}>
-                  <SwiperSlide className="swiper__slide">
-                    <div className='flex flex-col items-center w-96 h-72 p-10 rounded-lg'
+                  <SwiperSlide
+                    className="swiper__slide"
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center'
+                    }}
+                  >
+                    <div className='flex flex-col items-center w-72 h-96 p-10 rounded-lg'
                       style={{
                         background: 'linear-gradient(135deg, #1A202A 0%, #101319 100%)',
                       }}
@@ -107,8 +125,8 @@ const CustomerReview = () => {
                             className='rounded-full'
                             src={'/user.jpeg'} alt='user'
                             // fill={true} 
-                            width={50}
-                            height={50}
+                            width={80}
+                            height={80}
                           />
                         </div>
                         <div className='details flex flex-col'>
@@ -117,7 +135,7 @@ const CustomerReview = () => {
                           <Image src={'/star.jpg'} height={20} width={50} alt='ratings' />
                         </div>
                       </div>
-                      <p className='text-center text-gray-400 mt-6'>{item.desc}</p>
+                      <p className='text-center text-white mt-6'>{item.desc}</p>
                     </div>
                   </SwiperSlide>
                 </div>
