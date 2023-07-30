@@ -99,21 +99,6 @@ const BluetoothDiscover = () => {
           </div>
         </div>
       </div>
-      {/* <div className='right max-w-2xl flex items-start justify-start flex-col'>
-          <h1 className='text-3xl sm:text-5xl font-bold' style={{ lineHeight: '1.2' }}>
-            <span className='text-custom-blue'>Connect
-            </span> - Effortless <br />
-            Networking At Your Fingertips.
-          </h1>
-          <div className='h-1 bg-custom-blue rounded w-32 mt-4 mb-4' />
-          <p className='text-left tracking-tight sm:text-lg'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam delectus sed aliquam adipisci alias aut, voluptatem corrupti, labore temporibus possimus dolorum nihil debitis, praesentium nostrum iure laborum. A commodi voluptates molestiae optio. Molestiae officia, harum laborum nostrum rerum consequatur nam dicta amet illum veniam esse incidunt, deleniti, sequi maiores eligendi ipsam praesentium ut? Fuga explicabo quis ut repellat molestias provident!
-          </p>
-          
-          <button className='bg-custom-blue text-base px-14 py-2 mt-4 text-white rounded-md mx-auto sm:mx-0'>
-            Download SendContact
-          </button>
-        </div> */}
     </div>
   );
 };
