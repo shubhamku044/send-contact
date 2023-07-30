@@ -12,7 +12,7 @@ const Header = () => {
     <nav className='z-10 bg-gradient-to-b from-black/90 to-black/5 fixed w-full top-0 left-0'>
       <div className='flex items-center justify-between max-w-7xl mx-auto p-4'>
         <Link href={'/'}>
-          <div className='relative w-40' style={{ aspectRatio: '188.6/42.1' }}>
+          <div className='relative w-32 sm:w-40' style={{ aspectRatio: '188.6/42.1' }}>
             <Image
               src={'/logo.svg'}
               alt='Send contact'
@@ -49,11 +49,11 @@ const Header = () => {
             </Link>
           </ul>
         </div>
-        <div className='flex items-center gap-4'>
+        <div className='flex items-stretch gap-4'>
           <button className={`${styles.button} bg-custom-blue px-8`}>Sign up</button>
           <button className={`${styles.button} bg-[#242E3D] flex items-center gap-2`}>
-            <AiOutlineShoppingCart className='h-4 w-4' />
-            <span>Shop</span>
+            <AiOutlineShoppingCart className='h-6 w-6 sm:h-4 sm:w-4' />
+            <span className='hidden sm:inline'>Shop</span>
           </button>
         </div>
       </div>
