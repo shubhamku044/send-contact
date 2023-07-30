@@ -10,6 +10,7 @@ const DownloadSendContact = () => {
           <Image src={'/video.jpeg'} alt='' height={550} width={550} className='rounded-3xl' />
         </div>
         <div className='right mx-auto max-w-lg'>
+
           <h1 className='font-bold text-3xl lg:text-5xl' style={{ lineHeight: 1.2 }}>
             SendContact Brings Out The Best In Me. It&apos;s <br />
             <span className='text-custom-blue'>Simple And Easy To Use</span>
