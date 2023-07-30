@@ -12,13 +12,6 @@ const data = [
     title: 'abcde xyzt', role: 'author', ratings: 'start', desc: 'lorem ipsum dolor sit amet lorem reso saopaf ain afaagi asf asfasfnaadfg sdfd sdfg'
   },
   {
-    id: 1,
-    title: 'abcde xyzt',
-    role: 'author',
-    ratings: 'start',
-    desc: 'lorem ipsum dolor sit amet lorem reso saopaf ain afaagi asf asfasfnaadfg sdfd sdfg'
-  },
-  {
     id: 2,
     title: 'abcde xyzt',
     role: 'author',
@@ -53,6 +46,13 @@ const data = [
     ratings: 'start',
     desc: 'lorem ipsum dolor sit amet lorem reso saopaf ain afaagi asf asfasfnaadfg sdfd sdfg'
   },
+  {
+    id: 7,
+    title: 'abcde xyzt',
+    role: 'author',
+    ratings: 'start',
+    desc: 'lorem ipsum dolor sit amet lorem reso saopaf ain afaagi asf asfasfnaadfg sdfd sdfg'
+  },
 ];
 
 const CustomerReview = () => {
@@ -70,11 +70,25 @@ const CustomerReview = () => {
         <>
           <Swiper
             onSwiper={setSwiperRef}
-            slidesPerView={4}
+            slidesPerView={3}
             spaceBetween={30}
             loop={true}
             pagination={{
               clickable: true,
+            }}
+            breakpoints={{
+              300: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+              },
+              750: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+              },
+              1024: {
+                slidesPerView: 3,
+                spaceBetween: 50,
+              },
             }}
             className="mySwiper"
           >
@@ -82,18 +96,19 @@ const CustomerReview = () => {
               return (
                 <div className='item' key={id}>
                   <SwiperSlide className="swiper__slide">
-                    <div className='flex flex-col items-center w-72 p-10 rounded-lg'
+                    <div className='flex flex-col items-center w-96 h-72 p-10 rounded-lg'
                       style={{
                         background: 'linear-gradient(135deg, #1A202A 0%, #101319 100%)',
-                        height: '22rem'
                       }}
                     >
                       <div className='top flex gap-6'>
-                        <div className='relative h-100 w-100'>
+                        <div className='flex items-center justify-center'>
                           <Image
-                            className=''
+                            className='rounded-full'
                             src={'/user.jpeg'} alt='user'
-                            fill={true}
+                            // fill={true} 
+                            width={50}
+                            height={50}
                           />
                         </div>
                         <div className='details flex flex-col'>
