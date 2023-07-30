@@ -1,10 +1,8 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import React from 'react';
 import { AiFillYoutube, AiOutlineInstagram } from 'react-icons/ai';
 import { SiWetransfer } from 'react-icons/si';
 import { BsDropbox, BsLinkedin } from 'react-icons/bs';
-
 
 const ConnectEffortless = () => {
   return (
@@ -18,11 +16,16 @@ const ConnectEffortless = () => {
           </h1>
           <div className='h-1 bg-custom-blue rounded w-32 mt-4 mb-4' />
           <p className='text-left tracking-tight sm:text-lg'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam delectus sed aliquam adipisci alias aut, voluptatem corrupti, labore temporibus possimus dolorum nihil debitis, praesentium nostrum iure laborum. A commodi voluptates molestiae optio. Molestiae officia, harum laborum nostrum rerum consequatur nam dicta amet illum veniam esse incidunt, deleniti, sequi maiores eligendi ipsam praesentium ut? Fuga explicabo quis ut repellat molestias provident!
+            With the SendContact App, networking becomes effortless. Utilizing cutting-edge NFC technology,
+            you can seamlessly connect with customers and potential partners. Just a simple tap of your phone
+            against another person&*apos;s NFC card or phone instantly transfers contact information, images, and
+            videos. It&apos;s like having a digital business card on the go.
           </p>
-          <span className='text-base my-3 text-center font-bold mx-auto sm:mx-0'>You're also able to add  your 
-           social media  links as:</span>
-           <div className='my-3 grid md:grid-cols-3 grid-cols-1 w-full items-center'>
+          <span className='text-base my-3 text-center font-bold mx-auto sm:mx-0'>
+            You&apos;re also able to add  your
+            social media  links as:
+          </span>
+          <div className='my-3 grid md:grid-cols-3 grid-cols-1 w-full items-center'>
             <div className='flex items-center space-x-3 md:justify-normal justify-center'>
               <div>< AiOutlineInstagram className='text-xl' /></div>
               <div>Instagram</div>
@@ -43,7 +46,7 @@ const ConnectEffortless = () => {
               <div>< BsDropbox className='text-xl' /></div>
               <div>Dropbox</div>
             </div>
-           </div>
+          </div>
           <button className='bg-custom-blue text-base px-14 py-2 mt-4 text-white rounded-md mx-auto sm:mx-0'>
             Download SendContact
           </button>
