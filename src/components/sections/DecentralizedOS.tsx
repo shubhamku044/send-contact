@@ -4,22 +4,22 @@ import React from 'react';
 const DecentralizedOS = () => {
   return (
     <section>
-      <div className='section flex items-center justify-between'>
+      <div className='section flex flex-col-reverse items-center justify-between md:flex-row'>
         <div className='left '>
           <Image src={'/01-01.jpg'}
-            alt='Send' className='bg-blend max-w-[32rem]'
+            alt='Send' className='bg-blend sm:max-w-[32rem]'
             height={500}
             width={500}
           />
         </div>
         <div className='right max-w-2xl flex items-start justify-start flex-col'>
-          <h1 className='text-5xl font-bold' style={{ lineHeight: '1.2' }}>
+          <h1 className='text-3xl sm:text-4xl md:text-5xl font-bold' style={{ lineHeight: '1.2' }}>
             The SendContact<span className='text-custom-blue'> Decentralized Operating System:
             </span> Empowering <br />
              Individuals And Businesses
           </h1>
           <div className='h-1 bg-custom-blue rounded w-32 mt-4 mb-4' />
-          <p className='text-left tracking-tight text-lg'>
+          <p className='text-left text-base md:text-lg'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Inventore mollitia consequuntur, repellat provident soluta harum alias facere natus praesentium
              veritatis ad, accusamus ex. Alias, sunt. Eius qui beatae, aut quisquam impedit accusamus
