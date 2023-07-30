@@ -28,7 +28,7 @@ const SendContactBenefits = () => {
       <section className='section border-b-4 border-b-gray-700'>
         <h2 className='text-center text-5xl font-bold'>Sendcontact Benefits</h2>
         <div className='h-1 bg-custom-blue w-28 mx-auto mt-12' />
-        <div className='justify-between flex mt-10'>
+        <div className='justify-between flex flex-col lg:flex-row mt-10'>
           <Card
             title={'Easy to use'}
             description={
