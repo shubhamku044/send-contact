@@ -85,11 +85,6 @@ const SendContactBenefits = () => {
                   slidesPerView: 3,
                   spaceBetween: 30,
                 },
-
-                1024: {
-                  slidesPerView: 4,
-                  spaceBetween: 40,
-                },
               }}
               className="mySwiper"
             >
