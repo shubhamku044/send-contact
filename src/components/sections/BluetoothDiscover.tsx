@@ -17,7 +17,7 @@ const BluetoothDiscover = () => {
               className="absolute top-9 left-16 text-3xl sm:text-5xl text-white font-bold text-left"
               style={{ lineHeight: '1.2' }}
             >
-              <span className="text-custom-blue">Bluetooth</span> Discovery{" "}
+              <span className="text-custom-blue">Bluetooth</span> Discovery{' '}
               <br />
               Technology
             </h1>
