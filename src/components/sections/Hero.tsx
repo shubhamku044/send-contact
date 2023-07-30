@@ -3,17 +3,10 @@ import React from 'react';
 const Hero = () => {
   return (
     <section
-      style={{
-        background: 'linear-gradient(0deg, rgba(0, 0, 0, 0.10) 0%, rgba(0, 0, 0, 0.10) 100%), linear-gradient(180deg, rgba(0, 0, 0, 0.50) 35.94%, rgba(0, 0, 0, 0.00) 100%), url("/hero_bg.png"), lightgray -46.031px -1.228px / 121.926% 116.15% no-repeat',
-        backgroundRepeat: 'no-repeat',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        // aspectRatio: '1729/849',
-        height: '849px',
-      }}
+      className='hero'
     >
-      <div className='section h-full flex items-center'>
-        <div className='text-5xl' style={{ lineHeight: '1.2' }}>
+      <div className='section h-full flex items-start md:items-center'>
+        <div className='text-3xl mt-20 md:mt-20 md:text-5xl px-4' style={{ lineHeight: '1.2' }}>
           <h1 className='font-bold text-custom-blue'>SendContact</h1>
           <p className='text-white'>Transform the way <br />you connect, present,<br /> and sell -</p>
           <p className='text-white'>Efforlessly</p>
