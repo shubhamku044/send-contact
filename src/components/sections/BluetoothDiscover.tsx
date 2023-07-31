@@ -9,9 +9,9 @@ import styles from './BluetoothDiscover.module.css';
 const BluetoothDiscover = () => {
 
   return (
-    <div className="relative h-screen">
+    <div className={styles.BluetoothDiscover}>
       <div className="section flex flex-col-reverse items-center justify-between md:flex-row">
-        <div>
+        <div className='overflow-hidden'>
           <Image
             className={styles.image}
             src={'/Bluetooth Discovery Technology.png'}
@@ -23,6 +23,7 @@ const BluetoothDiscover = () => {
             className={styles.CirclesWrap}
           >
             <div className={styles.Circles}>Some content</div>
+            <div className={styles.PhonesWrap}></div>
           </div>
         </div>
         <div className="flex justify-between  ">
