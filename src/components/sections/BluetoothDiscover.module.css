@@ -1,0 +1,36 @@
+.CirclesWrap
+{
+    position: absolute;
+    width:60px;
+    z-index: 10;
+    height:60px;
+    background:#111;
+    left: 50%;
+    bottom: 50%;
+    color:#fff;
+    background: red;
+}
+.Circles
+{
+    position: absolute;
+    width:60px;
+    z-index: 10;
+    height:60px;
+    background:#111;
+    right: 350%;
+    top: 400%;
+}
+
+@media screen and (min-width: 950) 
+{
+    .Circles
+    {
+        position: absolute;
+        width:60px;
+        z-index: 10;
+        height:60px;
+        background:red;
+        right: 350%;
+        top: 50vh;
+    }
+}
