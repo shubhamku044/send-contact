@@ -11,15 +11,19 @@ import styles from './ConnectEffortless.module.css';
 
 const ConnectEffortless = () => {
   const [isInView, setIsInView] = useState(false);
+  const [ pulseActive, setIsPulseActive ] = useState(false);
   const { ref, inView } = useInView({
     triggerOnce: false, 
-    threshold: 0.8, // trigger when 80% of the element visible in the viewport
+    threshold: 0.6, // trigger when 80% of the element visible in the viewport
   });
 
   // Set the isInView state when the element enters the viewport
   useEffect(() => {
     if (inView) {
       setIsInView(true);
+      setTimeout(() => {
+         setIsPulseActive(true)
+      }, 800)
     }
   }, [inView]);
   
@@ -28,6 +32,16 @@ const ConnectEffortless = () => {
     if (isInView) return defaultStyle + " " + styles.showHand
     else return defaultStyle + " " + styles.hideHand;
   };
+  
+  const getCirclesStyle = () => {
+    if (pulseActive)
+    {
+      return styles.Pulse;
+    } else
+    {
+      return "";
+    }
+  }
 
 
   return (
@@ -76,17 +90,24 @@ const ConnectEffortless = () => {
             Download SendContact
           </button>
         </div>
-        <div className='left overflow-hidden' ref={ref}>
-          <Image src={'/hand-and-card.png'}
-            alt='Send' className='bg-blend max-w-[32rem]'
-            height={300}
-            width={400}
-          />
-          <Image src={'/hand-and-mobile.png'}
-            alt='Send' className={getHandStyle()}
-            height={300}
-            width={400}
-          />
+        <div className='left relative' ref={ref}>
+          <div className={styles.HandWrap}>
+            <Image src={'/hand-and-card.png'}
+              alt='Send' className='bg-blend max-w-[32rem] relative z-0'
+              height={300}
+              width={400}
+            />
+            <Image src={'/hand-and-mobile.png'}
+              alt='Send' className={getHandStyle()}
+              height={300}
+              width={400}
+            />
+          </div>
+          <div className={styles.ContainerCircles}>
+            <div className={styles.StrCircle1 + " " + getCirclesStyle()}></div>
+            <div className={styles.StrCircle2 + " " + getCirclesStyle()}></div>
+            <div className={styles.StrCircle3 + " " + getCirclesStyle()}></div>
+          </div>
         </div>
       </div>
     </section>
