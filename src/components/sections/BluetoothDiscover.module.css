@@ -21,9 +21,9 @@
     bottom: 50%;
     color:#fff;
     background: transparent;
-    /* border: solid  white 5px; debug purposes*/
-    width: 150vh;
-    height: 75vh;
+    border: solid  white 5px;
+    width: 91vw;
+    height: 50vw;
     transform: translate3d(-50%, 50%, 0);
 }
 .ContainerCircles {
@@ -62,11 +62,11 @@
 {
     .CirclesWrap
     {
-        width: 95vw;
-        height: 50vw;
+        width: 139vh;
+        height: 77vh;
         left: 50%;
         bottom: 50%;
-        /* border: solid red 5px; this is for debug purposes*/
+        border: solid red 5px;
         transform: translate3d(-50%, 50%, 0);
     }
 }
@@ -78,11 +78,11 @@
         height: 50vw;
         left: 50%;
         bottom: 50%;
-        /* border: solid   orange 5px; */ 
+        border: solid   orange 5px;
         transform: translate3d(-50%, 50%, 0);
     }
 }
-@media screen and (min-width: 1550px) 
+@media screen and (min-width: 1820px) 
 {
     .CirclesWrap
     {
@@ -90,7 +90,19 @@
         height: 50vw;
         left: 50%;
         bottom: 50%;
-        /* border: solid  green 5px; */ 
+        border: solid  green 5px;  
+        transform: translate3d(-50%, 50%, 0);
+    }
+}
+@media screen and (min-width: 2000px) 
+{
+    .CirclesWrap
+    {
+        width: 145vh;
+        height: 50vw;
+        left: 50%;
+        bottom: 50%;
+        border: solid  purple 5px;  
         transform: translate3d(-50%, 50%, 0);
     }
 }
@@ -106,7 +118,7 @@
         transform: translate3d(-50%, 50%, 0);
     }
 }
-@media screen and (max-width: 1550px) and (min-height: 900px)
+@media screen and (max-width: 1750px) and (min-height: 870px)
 {
     .CirclesWrap
     {
@@ -114,7 +126,19 @@
         height: 75vh;
         left: 50%;
         bottom: 50%;
-        /* border: solid  blue 5px; */
+        border: solid  blue 5px; 
+        transform: translate3d(-50%, 50%, 0);
+    }
+}
+@media screen and (max-width: 1170px) and (max-height: 900px)
+{
+    .CirclesWrap
+    {
+        width: 140vh;
+        height: 75vh;
+        left: 50%;
+        bottom: 50%;
+        border: solid  yellow 5px; 
         transform: translate3d(-50%, 50%, 0);
     }
 }
