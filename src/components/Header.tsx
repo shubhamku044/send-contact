@@ -74,8 +74,8 @@ const Header = () => {
           </div>
         </div>
       </nav>
-      <div className="w-40 h-96 bg-[#13171E] text-white absolute top-0 left-0 lg:hidden z-20 px-3 py-4 flex flex-row rounded-br-sm">
-        <ul className="w-full mt-8">
+      <div className="w-1/2 h-screen bg-[#13171E] text-white absolute top-0 left-0 lg:hidden z-20 px-3 py-4 flex flex-row rounded-br-sm">
+        <ul className="w-full flex flex-col gap-8 mt-12">
           <Link href={'/'} className="flex justify-center items-center border-b-2 border-gray-600">
             <li className="lg:px-4 p-2">Home</li>
           </Link>
