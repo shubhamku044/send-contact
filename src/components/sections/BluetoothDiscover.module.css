@@ -21,21 +21,43 @@
     bottom: 50%;
     color:#fff;
     background: transparent;
-    border: solid  white 5px;
-    width: 130vh;
-    height: 80vh;
+    /* border: solid  white 5px; debug purposes*/
+    width: 150vh;
+    height: 75vh;
     transform: translate3d(-50%, 50%, 0);
 }
-.Circles
-{
+.ContainerCircles {
     position: absolute;
+    left: 13%;
+    bottom: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 500px;
+    transform: rotateX(80deg) rotateY(-2deg);
+  }
+  /* CIRCLE */
+  .StrCircle1, .StrCircle2, .StrCircle3 {
+    position: absolute;
+    top: 45px;
+    left: 45px;
     width: 35vh;
-    z-index: 10;
-    height:60px;
-    background:#111;
-    left: 15%;
-    bottom: 00%;
-}
+    height: 35vh;
+    border-radius: 50%;
+    background: transparent;
+    animation: radial-pulse 3s infinite;
+  }
+  .StrCircle2 {
+    animation-delay: 1.3333s;
+  }
+  .StrCircle3 {
+    animation-delay: 2.6666s;
+  }
+  
+  @keyframes radial-pulse {
+    0%   {box-shadow: 0 0 0 0em rgba(160, 160, 160,.8);}
+    100% {box-shadow: 0 0 0 22vw rgba(255,100,100,.0);}
+  }
 @media screen and (min-width: 1150px) and (max-width: 1550px)
 {
     .CirclesWrap
@@ -44,7 +66,7 @@
         height: 50vw;
         left: 50%;
         bottom: 50%;
-        border: solid red 5px;
+        /* border: solid red 5px; this is for debug purposes*/
         transform: translate3d(-50%, 50%, 0);
     }
 }
@@ -56,7 +78,7 @@
         height: 50vw;
         left: 50%;
         bottom: 50%;
-        border: solid   orange 5px;
+        /* border: solid   orange 5px; */ 
         transform: translate3d(-50%, 50%, 0);
     }
 }
@@ -68,7 +90,7 @@
         height: 50vw;
         left: 50%;
         bottom: 50%;
-        border: solid  green 5px;
+        /* border: solid  green 5px; */ 
         transform: translate3d(-50%, 50%, 0);
     }
 }
@@ -76,10 +98,11 @@
 {
     .CirclesWrap
     {
-        width: 100vw;
+        width: 145vh;
+        height: 75vh;
         left: 50%;
         bottom: 50%;
-        border: solid  purple 5px;
+        /* border: solid  purple 5px; */
         transform: translate3d(-50%, 50%, 0);
     }
 }
@@ -91,7 +114,7 @@
         height: 75vh;
         left: 50%;
         bottom: 50%;
-        border: solid  blue 5px;
+        /* border: solid  blue 5px; */
         transform: translate3d(-50%, 50%, 0);
     }
 }

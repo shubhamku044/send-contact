@@ -22,8 +22,11 @@ const BluetoothDiscover = () => {
           <div 
             className={styles.CirclesWrap}
           >
-            <div className={styles.Circles}>Some content</div>
-            <div className={styles.PhonesWrap}></div>
+            <div className={styles.ContainerCircles}>
+              <div className={styles.StrCircle1}></div>
+              <div className={styles.StrCircle2}></div>
+              <div className={styles.StrCircle3}></div>
+            </div>
           </div>
         </div>
         <div className="flex justify-between  ">
