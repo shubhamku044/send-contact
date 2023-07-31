@@ -21,33 +21,33 @@ const ConnectEffortless = () => {
             against another person&*apos;s NFC card or phone instantly transfers contact information, images, and
             videos. It&apos;s like having a digital business card on the go.
           </p>
-          <span className='text-base my-3 text-center font-bold mx-auto sm:mx-0'>
+          <span className='text-base my-3 text-left font-bold sm:mx-0'>
             You&apos;re also able to add  your
             social media  links as:
           </span>
-          <div className='my-3 grid md:grid-cols-3 grid-cols-1 w-full items-center'>
-            <div className='flex items-center space-x-3 md:justify-normal justify-center'>
+          <div className='my-3 grid md:grid-cols-3 grid-cols-2 w-full items-center'>
+            <div className='flex items-center space-x-3 md:justify-normal'>
               <div>< AiOutlineInstagram className='text-xl' /></div>
               <div>Instagram</div>
             </div>
-            <div className='flex  items-center space-x-3 md:justify-normal justify-center'>
+            <div className='flex items-center space-x-3 space-y-3 md:justify-normal'>
               <div>< SiWetransfer className='text-xl' /></div>
               <div>WeTransfer</div>
             </div>
-            <div className='flex items-center space-x-3 md:justify-normal justify-center'>
+            <div className='flex items-center space-x-3 space-y-3 md:justify-normal'>
               <div>< AiFillYoutube className='text-xl' /></div>
               <div>Youtube</div>
             </div>
-            <div className='flex items-center space-x-3 md:justify-normal justify-center'>
+            <div className='flex items-center space-x-3 space-y-3 md:justify-normal'>
               <div>< BsLinkedin className='text-xl' /></div>
               <div>Linkedin</div>
             </div>
-            <div className='flex items-center space-x-3 md:justify-normal justify-center'>
+            <div className='flex items-center space-x-3 space-y-3 md:justify-normal'>
               <div>< BsDropbox className='text-xl' /></div>
               <div>Dropbox</div>
             </div>
           </div>
-          <button className='bg-custom-blue text-base px-14 py-2 mt-4 text-white rounded-md mx-auto sm:mx-0'>
+          <button className='bg-custom-blue text-base px-14 py-2 mt-4 text-white rounded-md sm:mx-0'>
             Download SendContact
           </button>
         </div>

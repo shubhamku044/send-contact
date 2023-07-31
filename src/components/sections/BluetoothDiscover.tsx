@@ -25,14 +25,13 @@ const BluetoothDiscover = () => {
           </div>
           <div>
             <p className="text-left text-base tracking-tight text-white absolute md:top-12 top-52 left-16 md:left-auto right-0 md:right-16 w-3/4 md:w-1/2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
-              delectus sed aliquam adipisci alias aut, voluptatem corrupti,
-              labore temporibus possimus dolorum nihil debitis, praesentium
-              nostrum iure laborum. A commodi voluptates molestiae optio.
-              Molestiae officia, harum laborum nostrum rerum consequatur nam
-              dicta amet illum veniam esse incidunt, deleniti, sequi maiores
-              eligendi ipsam praesentium ut? Fuga explicabo quis ut repellat
-              molestias provident!
+              But that&apos;s not all – our app goes even further. It incorporates
+              Bluetooth discovery technology, intelligently organizing a list of
+              people around you. This ensures efficient information sharing by
+              presenting the nearest and most relevant individuals. Our app
+              helps you connect with potential customers with a SendContact
+              virtual card, NFC digital business card, Bluetooth connect, and a
+              simple way to share your business.
             </p>
           </div>
         </div>

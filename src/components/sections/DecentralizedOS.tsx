@@ -20,16 +20,17 @@ const DecentralizedOS = () => {
           </h1>
           <div className='h-1 bg-custom-blue rounded w-32 mt-4 mb-4' />
           <p className='text-left text-base md:text-lg'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Inventore mollitia consequuntur, repellat provident soluta harum alias facere natus praesentium
-             veritatis ad, accusamus ex. Alias, sunt. Eius qui beatae, aut quisquam impedit accusamus
-              dolorem libero earum eos id minus magni veritatis alias velit veniam cum quidem 
-              ipsam animi illum ut rerum adipisci! Quis cum dolore, sunt dolorum quia accusamus 
-              distinctio voluptates reprehenderit dolorem eius fugit nostrum quo minima excepturi,
-               similique rem iusto maxime fugiat pariatur placeat. Tempora quas, voluptatibus numquam,
-                repellat reprehenderit modi, iusto iure aliquam ut maxime ad. Mollitia, ea nesciunt.
-                 Amet obcaecati accusantium dolore in, ratione quis totam, dolorum, ipsum veritatis ut 
-                 distinctio omnis quisquam nihil. Omnis in facere nobis, sequi architecto ipsam! 
+          In a world dominated by centralized control, SendContact introduces a
+decentralized operating system. This all-in-one communication tool grants
+individuals and businesses complete control over their tools, data, and content.
+Our core technology operates independently in both centralized and
+decentralized modes. The centralized application offers convenience and fast
+communication, while the decentralized application ensures privacy, security,
+and freedom from censorship. With SendContact, you regain ownership and
+control over your communication tools, liberating yourself from the bondage of
+social media and the centralized internet. It&apos;s an exciting time for individuals and
+businesses to seize control over their devices and communication tools,
+empowering them to truly harness their potential. 
                  
           </p>
         </div>
