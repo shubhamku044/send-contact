@@ -14,25 +14,25 @@ interface CardProps {
 const data = [
   {
     id: 1,
-    title: 'abcde xyzt', icon: '/benefits/Scalable.svg', desc: 'lorem ipsum dolor sit amet lorem reso saopaf ain afaagi asf asfasfnaadfg sdfd sdfg'
+    title: 'Time-saving', icon: '/benefits/Scalable.svg', desc: 'Our app streamlines your workflow and saves you time on repetitive tasks like lead generation and content management.'
   },
   {
     id: 2,
-    title: 'abcde xyzt',
+    title: 'User-friendly',
     icon: '/benefits/Scalable.svg',
-    desc: 'lorem ipsum dolor sit amet lorem reso saopaf ain afaagi asf asfasfnaadfg sdfd sdfg'
+    desc: "Our app is easy to use, even if you don't have technical expertise."
   },
   {
     id: 3,
-    title: 'abcde xyzt',
+    title: 'Cost-effective',
     icon: '/benefits/Scalable.svg',
-    desc: 'lorem ipsum dolor sit amet lorem reso saopaf ain afaagi asf asfasfnaadfg sdfd sdfg'
+    desc: 'Our app saves your time and money without the need to pay for a website or developer to maintain it, so you can focus on growing your business.'
   },
   {
     id: 4,
-    title: 'abcde xyzt',
+    title: 'Scalable',
     icon: '/benefits/Scalable.svg',
-    desc: 'lorem ipsum dolor sit amet lorem reso saopaf ain afaagi asf asfasfnaadfg sdfd sdfg'
+    desc: 'Our app is designed to grow with your business and adapt to your changing needs. With the ability to add multiple virtual cards, mini-websites, and payment links'
   },
   {
     id: 5,
