@@ -1,0 +1,11 @@
+.hideHand
+{
+    transition: transform 1.0s ease; /* Adjust the timing here */
+    transform: translateY(50%) translateX(10%) rotateZ(-10deg); /* Initial position */
+
+}
+.showHand
+{
+    transition: transform 1.0s ease; /* Adjust the timing here */
+    transform: translateY(5%) translateX(0%) rotateZ(0deg); /* Initial position */
+}
