@@ -21,7 +21,7 @@
     bottom: 50%;
     color:#fff;
     background: transparent;
-    border: solid  white 5px;
+    /* border: solid  white 5px; */
     width: 91vw;
     height: 50vw;
     transform: translate3d(-50%, 50%, 0);
@@ -66,7 +66,7 @@
         height: 77vh;
         left: 50%;
         bottom: 50%;
-        border: solid red 5px;
+        /* border: solid red 5px; */
         transform: translate3d(-50%, 50%, 0);
     }
 }
@@ -78,7 +78,7 @@
         height: 50vw;
         left: 50%;
         bottom: 50%;
-        border: solid   orange 5px;
+        /* border: solid   orange 5px; */
         transform: translate3d(-50%, 50%, 0);
     }
 }
@@ -90,7 +90,7 @@
         height: 50vw;
         left: 50%;
         bottom: 50%;
-        border: solid  green 5px;  
+        /* border: solid  green 5px;  */
         transform: translate3d(-50%, 50%, 0);
     }
 }
@@ -102,7 +102,7 @@
         height: 50vw;
         left: 50%;
         bottom: 50%;
-        border: solid  purple 5px;  
+        /* border: solid  purple 5px;  */
         transform: translate3d(-50%, 50%, 0);
     }
 }
@@ -126,7 +126,7 @@
         height: 75vh;
         left: 50%;
         bottom: 50%;
-        border: solid  blue 5px; 
+        /* border: solid  blue 5px; */
         transform: translate3d(-50%, 50%, 0);
     }
 }
@@ -138,7 +138,7 @@
         height: 75vh;
         left: 50%;
         bottom: 50%;
-        border: solid  yellow 5px; 
+        /* border: solid  yellow 5px; */
         transform: translate3d(-50%, 50%, 0);
     }
 }
