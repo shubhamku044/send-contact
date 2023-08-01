@@ -44,6 +44,7 @@
     width: 35vh;
     height: 35vh;
     border-radius: 50%;
+    border: solid #C7C0BE  10px;
     background: transparent;
     animation: radial-pulse 3s infinite;
   }
@@ -55,8 +56,14 @@
   }
   
   @keyframes radial-pulse {
-    0%   {box-shadow: 0 0 0 0em rgba(160, 160, 160,.8);}
-    100% {box-shadow: 0 0 0 22vw rgba(255,100,100,.0);}
+    0%   {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(5.0);
+        opacity: 0;
+    }
   }
 @media screen and (min-width: 1150px) and (max-width: 1550px)
 {
