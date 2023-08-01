@@ -1,7 +1,6 @@
 'use client';
 
 import Image from 'next/image';
-import { useState } from 'react';
 import React from 'react';
 
 import styles from './BluetoothDiscover.module.css';
@@ -14,12 +13,12 @@ const BluetoothDiscover = () => {
         <div className='overflow-hidden'>
           <Image
             className={styles.image}
-            src={'/Bluetooth Discovery Technology.png'}
-            layout="fill"
+            src={'/bg.png'}
             objectFit="cover"
             alt={''}
+            fill={true}
           />
-          <div 
+          <div
             className={styles.CirclesWrap}
           >
             <div className={styles.ContainerCircles}>
@@ -29,7 +28,7 @@ const BluetoothDiscover = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-between  ">
+        <div className="flex justify-between">
           <div>
             <h1
               className="absolute top-9 left-16 text-3xl sm:text-5xl text-white font-bold text-left"
