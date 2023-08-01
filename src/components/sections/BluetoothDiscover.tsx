@@ -13,7 +13,7 @@ const BluetoothDiscover = () => {
         <div className='overflow-hidden'>
           <Image
             className={styles.image}
-            src={'/bg.png'}
+            src={'/bg.gif'}
             objectFit="cover"
             alt={''}
             fill={true}
