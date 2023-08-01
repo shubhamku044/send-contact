@@ -1,13 +1,51 @@
+'use client';
+
 import Image from 'next/image';
 import React from 'react';
+import { useState, useEffect } from 'react';
+import { InView, useInView } from 'react-intersection-observer';
 import { AiFillYoutube, AiOutlineInstagram } from 'react-icons/ai';
 import { SiWetransfer } from 'react-icons/si';
 import { BsDropbox, BsLinkedin } from 'react-icons/bs';
+import styles from './ConnectEffortless.module.css';
 
 const ConnectEffortless = () => {
+  const [isInView, setIsInView] = useState(false);
+  const [ pulseActive, setIsPulseActive ] = useState(false);
+  const { ref, inView } = useInView({
+    triggerOnce: false, 
+    threshold: 0.6, // trigger when 80% of the element visible in the viewport
+  });
+
+  // Set the isInView state when the element enters the viewport
+  useEffect(() => {
+    if (inView) {
+      setIsInView(true);
+      setTimeout(() => {
+        setIsPulseActive(true);
+      }, 800);
+    }
+  }, [inView]);
+  
+  const getHandStyle = () => {
+    let defaultStyle = 'bg-blend max-w-[32rem] -mt-16';
+    if (isInView) return defaultStyle + ' ' + styles.showHand;
+    else return defaultStyle + ' ' + styles.hideHand;
+  };
+  
+  const getCirclesStyle = () => {
+    if (pulseActive)
+    {
+      return styles.Pulse;
+    } else
+    {
+      return '';
+    }
+  };
+
   return (
     <section>
-      <div className='section flex flex-col-reverse items-center justify-between md:flex-row'>
+      <div className='section flex flex-col-reverse items-center justify-between md:flex-row '>
         <div className='right max-w-2xl flex items-start justify-start flex-col'>
           <h1 className='text-3xl sm:text-5xl font-bold' style={{ lineHeight: '1.2' }}>
             <span className='text-custom-blue'>Connect
@@ -51,17 +89,24 @@ const ConnectEffortless = () => {
             Download SendContact
           </button>
         </div>
-        <div className='left '>
-          <Image src={'/hand-and-card.png'}
-            alt='Send' className='bg-blend max-w-[32rem]'
-            height={300}
-            width={400}
-          />
-          <Image src={'/hand-and-mobile.png'}
-            alt='Send' className='bg-blend max-w-[32rem] -mt-16'
-            height={300}
-            width={400}
-          />
+        <div className='left relative' ref={ref}>
+          <div className={styles.HandWrap}>
+            <Image src={'/hand-and-card.png'}
+              alt='Send' className='bg-blend max-w-[32rem] relative z-0'
+              height={300}
+              width={400}
+            />
+            <Image src={'/hand-and-mobile.png'}
+              alt='Send' className={getHandStyle()}
+              height={300}
+              width={400}
+            />
+          </div>
+          <div className={styles.ContainerCircles}>
+            <div className={styles.StrCircle1 + ' ' + getCirclesStyle()}></div>
+            <div className={styles.StrCircle2 + ' ' + getCirclesStyle()}></div>
+            <div className={styles.StrCircle3 + ' ' + getCirclesStyle()}></div>
+          </div>
         </div>
       </div>
     </section>
