@@ -1,9 +1,9 @@
-"use client";
+'use client';
 
 import Image from 'next/image';
 import React from 'react';
-import { useState, useEffect } from "react";
-import { InView, useInView } from "react-intersection-observer";
+import { useState, useEffect } from 'react';
+import { InView, useInView } from 'react-intersection-observer';
 import { AiFillYoutube, AiOutlineInstagram } from 'react-icons/ai';
 import { SiWetransfer } from 'react-icons/si';
 import { BsDropbox, BsLinkedin } from 'react-icons/bs';
@@ -22,15 +22,15 @@ const ConnectEffortless = () => {
     if (inView) {
       setIsInView(true);
       setTimeout(() => {
-         setIsPulseActive(true)
-      }, 800)
+        setIsPulseActive(true);
+      }, 800);
     }
   }, [inView]);
   
   const getHandStyle = () => {
-    let defaultStyle = 'bg-blend max-w-[32rem] -mt-16'
-    if (isInView) return defaultStyle + " " + styles.showHand
-    else return defaultStyle + " " + styles.hideHand;
+    let defaultStyle = 'bg-blend max-w-[32rem] -mt-16';
+    if (isInView) return defaultStyle + ' ' + styles.showHand;
+    else return defaultStyle + ' ' + styles.hideHand;
   };
   
   const getCirclesStyle = () => {
@@ -39,10 +39,9 @@ const ConnectEffortless = () => {
       return styles.Pulse;
     } else
     {
-      return "";
+      return '';
     }
-  }
-
+  };
 
   return (
     <section>
@@ -104,9 +103,9 @@ const ConnectEffortless = () => {
             />
           </div>
           <div className={styles.ContainerCircles}>
-            <div className={styles.StrCircle1 + " " + getCirclesStyle()}></div>
-            <div className={styles.StrCircle2 + " " + getCirclesStyle()}></div>
-            <div className={styles.StrCircle3 + " " + getCirclesStyle()}></div>
+            <div className={styles.StrCircle1 + ' ' + getCirclesStyle()}></div>
+            <div className={styles.StrCircle2 + ' ' + getCirclesStyle()}></div>
+            <div className={styles.StrCircle3 + ' ' + getCirclesStyle()}></div>
           </div>
         </div>
       </div>
