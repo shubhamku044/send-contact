@@ -22,8 +22,8 @@ const ConnectEffortless = () => {
     if (inView) {
       setIsInView(true);
       setTimeout(() => {
-         setIsPulseActive(true)
-      }, 800)
+        setIsPulseActive(true);
+      }, 800);
     }
   }, [inView]);
   
@@ -39,9 +39,9 @@ const ConnectEffortless = () => {
       return styles.Pulse;
     } else
     {
-      return "";
+      return '';
     }
-  }
+  };
 
   return (
     <section>
@@ -103,9 +103,9 @@ const ConnectEffortless = () => {
             />
           </div>
           <div className={styles.ContainerCircles}>
-            <div className={styles.StrCircle1 + " " + getCirclesStyle()}></div>
-            <div className={styles.StrCircle2 + " " + getCirclesStyle()}></div>
-            <div className={styles.StrCircle3 + " " + getCirclesStyle()}></div>
+            <div className={styles.StrCircle1 + ' ' + getCirclesStyle()}></div>
+            <div className={styles.StrCircle2 + ' ' + getCirclesStyle()}></div>
+            <div className={styles.StrCircle3 + ' ' + getCirclesStyle()}></div>
           </div>
         </div>
       </div>
