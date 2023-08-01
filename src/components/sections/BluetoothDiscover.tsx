@@ -1,16 +1,34 @@
+'use client';
+
 import Image from 'next/image';
+import { useState } from 'react';
 import React from 'react';
 
+import styles from './BluetoothDiscover.module.css';
+
 const BluetoothDiscover = () => {
+
   return (
-    <div className="relative h-screen">
+    <div className={styles.BluetoothDiscover}>
       <div className="section flex flex-col-reverse items-center justify-between md:flex-row">
-        <Image
-          src={'/Bluetooth Discovery Technology.png'}
-          layout="fill"
-          objectFit="cover"
-          alt={''}
-        />
+        <div className='overflow-hidden'>
+          <Image
+            className={styles.image}
+            src={'/Bluetooth Discovery Technology.png'}
+            layout="fill"
+            objectFit="cover"
+            alt={''}
+          />
+          <div 
+            className={styles.CirclesWrap}
+          >
+            <div className={styles.ContainerCircles}>
+              <div className={styles.StrCircle1}></div>
+              <div className={styles.StrCircle2}></div>
+              <div className={styles.StrCircle3}></div>
+            </div>
+          </div>
+        </div>
         <div className="flex justify-between  ">
           <div>
             <h1
