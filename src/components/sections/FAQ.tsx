@@ -2,6 +2,34 @@
 import React, { useState } from 'react';
 import { AiOutlineDown } from 'react-icons/ai';
 
+const FaqData = [
+  {
+    id: 1,
+    question: 'What is NFC and how does it work?',
+    answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipiscingLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipiscing'
+  },
+  {
+    id: 2,
+    question: 'How does the Smart Business Card work?',
+    answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipiscingLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipiscing'
+  },
+  {
+    id: 3,
+    question: 'What phones are compatible?',
+    answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipiscingLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipiscing'
+  },
+  {
+    id: 4,
+    question: 'What kind of files can I add to the Smart Card?',
+    answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipiscingLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipiscing'
+  },
+  {
+    id: 5,
+    question: 'Will I be able to add or remove files?',
+    answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipiscingLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipiscing'
+  }
+];
+
 const Accordion = ({ question, answer }: { question?: string; answer?: string; }) => {
   const [active, setActive] = useState(false);
 
@@ -12,7 +40,7 @@ const Accordion = ({ question, answer }: { question?: string; answer?: string; }
           className='flex cursor-pointer justify-between items-center'
           onClick={() => setActive(!active)}
         >
-          <h3 className='text-xl font-semibold py-2'>What is a smart card?</h3>
+          <h3 className='text-xl font-semibold py-2'>{question}</h3>
           <button className='text-xl font-semibold'>
             <AiOutlineDown
               className='text-custom-blue'
@@ -32,11 +60,7 @@ const Accordion = ({ question, answer }: { question?: string; answer?: string; }
             overflow: 'hidden',
           }}
         >
-          A smart card is a plastic card with a built-in microprocessor, used
-          typically to perform financial transactions. Smart cards are a subset
-          of a group of cards called chip cards. Smart cards may also provide
-          strong security authentication for single sign-on (SSO) within large
-          organizations.
+          {answer}
         </p>
       </div>
     </div>
@@ -44,16 +68,19 @@ const Accordion = ({ question, answer }: { question?: string; answer?: string; }
 };
 
 const FAQ = () => {
+
   return (
     <div className='bg-gray-medium text-white'>
       <section className='section border-b-4 border-b-gray-700'>
         <h2 className='text-center text-5xl'>Frequently Asked Questions</h2>
         <div className='mt-16 gap-4 flex flex-col'>
-          <Accordion />
-          <Accordion />
-          <Accordion />
-          <Accordion />
-          <Accordion />
+          {FaqData.map(({ id, question, answer }) => (
+            <Accordion
+              key={id}
+              question={question}
+              answer={answer}
+            />
+          ))}
         </div>
       </section>
     </div>

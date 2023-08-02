@@ -21,7 +21,7 @@ const Header = () => {
       >
         <HiMenuAlt1 className='text-2xl' />
       </div>
-      <nav className="z-10 bg-gray-dark md:bg-gradient-to-b md:from-black/90 md:to-black/5 fixed w-full top-0 left-0">
+      <nav className="z-20 bg-gray-dark md:bg-gradient-to-b md:from-black/90 md:to-black/5 fixed w-full top-0 left-0">
         <div className="flex items-center justify-between max-w-7xl mx-auto p-4">
           <Link href={'/'}>
             <div
