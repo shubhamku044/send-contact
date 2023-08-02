@@ -39,11 +39,17 @@ const SellStreamlined = () => {
               </div>
             </Link></div>
         </div>
-        <div className='left'>
+        <div className='left relative z-10'>
           <Image src={'/phone-and-hand.png'}
-            alt='Send' className='bg-blend max-w-[32rem]'
+            alt='Send' className='bg-blend max-w-[32rem] relative z-10'
             height={280}
             width={380}
+          />
+          <Image src={'/payment.gif'}
+            alt='Send' className='max-w-[500px] absolute z-0'
+            height={50}
+            width={145}
+            style={{ left: "15%", top: "1.85%" }}
           />
         </div>
       </div>
