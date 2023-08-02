@@ -23,7 +23,7 @@ const SellStreamlined = () => {
             you can enjoy a convenient and secure payment experience. Whether you&apos;re a small business
             or a budding entrepreneur, SendContact simplifies your online sales journey.
           </p>
-          <button className='bg-custom-blue text-base px-14 py-2 mt-4 text-white rounded-md mx-auto sm:mx-0'>
+          <button className='bg-custom-blue text-base px-14 py-2 mt-4 text-white rounded-md mx-auto sm:mx-0 animated-btn'>
             Download SendContact
           </button>
           <span className='text-base my-3 text-center mx-auto sm:mx-0'>Download SendContact App</span>
@@ -39,11 +39,17 @@ const SellStreamlined = () => {
               </div>
             </Link></div>
         </div>
-        <div className='left'>
+        <div className='left relative z-10'>
           <Image src={'/phone-and-hand.png'}
-            alt='Send' className='bg-blend max-w-[32rem]'
+            alt='Send' className='bg-blend max-w-[32rem] relative z-10'
             height={280}
             width={380}
+          />
+          <Image src={'/payment.gif'}
+            alt='Send' className='max-w-[500px] absolute z-0'
+            height={50}
+            width={145}
+            style={{ left: '15%', top: '1.85%' }}
           />
         </div>
       </div>

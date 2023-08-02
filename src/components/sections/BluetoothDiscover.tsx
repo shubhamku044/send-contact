@@ -49,7 +49,7 @@ const BluetoothDiscover = () => {
             </h1>
           </div>
           <div>
-            <p className={styles.BluetoothText__description + ' text-left  text-justify text-base tracking-tight text-white'}>
+            <p className={styles.BluetoothText__description + ' text-justify text-base tracking-tight text-white'}>
               But that&apos;s not all – our app goes even further. It incorporates
               Bluetooth discovery technology, intelligently organizing a list of
               people around you. This ensures efficient information sharing by

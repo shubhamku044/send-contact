@@ -11,9 +11,9 @@ import styles from './ConnectEffortless.module.css';
 
 const ConnectEffortless = () => {
   const [isInView, setIsInView] = useState(false);
-  const [ pulseActive, setIsPulseActive ] = useState(false);
+  const [pulseActive, setIsPulseActive] = useState(false);
   const { ref, inView } = useInView({
-    triggerOnce: false, 
+    triggerOnce: false,
     threshold: 0.6, // trigger when 80% of the element visible in the viewport
   });
 
@@ -26,19 +26,17 @@ const ConnectEffortless = () => {
       }, 800);
     }
   }, [inView]);
-  
+
   const getHandStyle = () => {
     let defaultStyle = 'bg-blend max-w-[32rem] -mt-16';
     if (isInView) return defaultStyle + ' ' + styles.showHand;
     else return defaultStyle + ' ' + styles.hideHand;
   };
-  
+
   const getCirclesStyle = () => {
-    if (pulseActive)
-    {
+    if (pulseActive) {
       return styles.Pulse;
-    } else
-    {
+    } else {
       return '';
     }
   };
@@ -85,7 +83,7 @@ const ConnectEffortless = () => {
               <div>Dropbox</div>
             </div>
           </div>
-          <button className='bg-custom-blue text-base px-14 py-2 mt-4 text-white rounded-md sm:mx-0'>
+          <button className='bg-custom-blue text-base px-14 py-2 mt-4 text-white rounded-md sm:mx-0 animated-btn'>
             Download SendContact
           </button>
         </div>

@@ -16,7 +16,7 @@ const Header = () => {
   return (
     <div className="relative">
       <div
-        className="fixed top-2 left-2 backdrop-blur-sm z-50 p-2 mt-1 mr-3 text-sm text-white rounded-lg sm:hidden"
+        className="fixed top-2 left-2 backdrop-blur-sm z-50 p-2 mt-1 mr-3 text-sm text-white rounded-lg lg:hidden"
         onClick={() => setIsMenuOpen(!isMenuOpen)}
       >
         <HiMenuAlt1 className='text-2xl' />
@@ -25,7 +25,7 @@ const Header = () => {
         <div className="flex items-center justify-between max-w-7xl mx-auto p-4">
           <Link href={'/'}>
             <div
-              className="relative w-32 sm:w-40 ml-10 md:ml-0"
+              className="relative w-32 sm:w-40 ml-10 lg:ml-0"
               style={{ aspectRatio: '188.6/42.1' }}
             >
               <Image
