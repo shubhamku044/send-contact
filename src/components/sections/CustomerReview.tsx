@@ -6,55 +6,64 @@ import 'swiper/css/pagination';
 import Image from 'next/image';
 import { AiOutlineArrowRight } from 'react-icons/ai';
 import { AiOutlineArrowLeft } from 'react-icons/ai';
+import { BsStarFill, BsStarHalf } from 'react-icons/bs';
+
 const data = [
   {
     id: 1,
-    title: 'abcde xyzt',
-    role: 'author',
-    ratings: 'start',
-    desc: 'lorem ipsum dolor sit amet lorem reso saopaf ain afaagi asf asfasfnaadfg sdfd sdfg lorem ipsum dolor sit amet lorem reso saopaf ain afaagi asf asfasfnaadfg sdfd sdfg'
+    title: 'Michel P.',
+    role: 'CEO, Grown Management',
+    ratings: 4.5,
+    desc: '\“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.\”',
+    imgSrc: '/users/michael.svg'
   },
   {
     id: 2,
-    title: 'abcde xyzt',
-    role: 'author',
-    ratings: 'start',
-    desc: 'lorem ipsum dolor sit amet lorem reso saopaf ain afaagi asf asfasfnaadfg sdfd sdfg lorem ipsum dolor sit amet lorem reso saopaf ain afaagi asf asfasfnaadfg sdfd sdfg'
+    title: 'Sarah H.',
+    role: 'Designer',
+    ratings: 5,
+    desc: '\“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.\”',
+    imgSrc: '/users/sarah.svg'
   },
   {
     id: 3,
-    title: 'abcde xyzt',
-    role: 'author',
-    ratings: 'start',
-    desc: 'lorem ipsum dolor sit amet lorem reso saopaf ain afaagi asf asfasfnaadfg sdfd sdfg lorem ipsum dolor sit amet lorem reso saopaf ain afaagi asf asfasfnaadfg sdfd sdfg'
+    title: 'John Brown',
+    role: 'Architect',
+    ratings: 4.5,
+    desc: '\“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.\”',
+    imgSrc: '/users/john.svg'
   },
   {
     id: 4,
-    title: 'abcde xyzt',
-    role: 'author',
-    ratings: 'start',
-    desc: 'lorem ipsum dolor sit amet lorem reso saopaf ain afaagi asf asfasfnaadfg sdfd sdfg lorem ipsum dolor sit amet lorem reso saopaf ain afaagi asf asfasfnaadfg sdfd sdfg'
+    title: 'Sarah H.',
+    role: 'Designer',
+    ratings: 5,
+    desc: '\“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.\”',
+    imgSrc: '/users/sarah.svg'
   },
   {
     id: 5,
-    title: 'abcde xyzt',
-    role: 'author',
-    ratings: 'start',
-    desc: 'lorem ipsum dolor sit amet lorem reso saopaf ain afaagi asf asfasfnaadfg sdfd sdfg lorem ipsum dolor sit amet lorem reso saopaf ain afaagi asf asfasfnaadfg sdfd sdfg'
+    title: 'Michel P.',
+    role: 'CEO, Grown Management',
+    ratings: 4.5,
+    desc: '\“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.\”',
+    imgSrc: '/users/michael.svg'
   },
   {
     id: 6,
-    title: 'abcde xyzt',
-    role: 'author',
-    ratings: 'start',
-    desc: 'lorem ipsum dolor sit amet lorem reso saopaf ain afaagi asf asfasfnaadfg sdfd sdfg lorem ipsum dolor sit amet lorem reso saopaf ain afaagi asf asfasfnaadfg sdfd sdfg'
+    title: 'John Brown',
+    role: 'Architect',
+    ratings: 4.5,
+    desc: '\“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.\”',
+    imgSrc: '/users/john.svg'
   },
   {
     id: 7,
-    title: 'abcde xyzt',
-    role: 'author',
-    ratings: 'start',
-    desc: 'lorem ipsum dolor sit amet lorem reso saopaf ain afaagi asf asfasfnaadfg sdfd sdfg lorem ipsum dolor sit amet lorem reso saopaf ain afaagi asf asfasfnaadfg sdfd sdfg'
+    title: 'Sarah H.',
+    role: 'Designer',
+    ratings: 5,
+    desc: '\“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.\”',
+    imgSrc: '/users/sarah.svg'
   },
 ];
 
@@ -66,6 +75,20 @@ const CustomerReview = () => {
   const preHandler = () => {
     swiperRef?.slidePrev();
   };
+
+  const genRatings = (ratings: number) => {
+    const arr = [];
+    const full = Math.floor(ratings);
+    const half = ratings - full;
+    for (let i = 0; i < full; i++) {
+      arr.push('full');
+    }
+    if (half > 0) {
+      arr.push('half');
+    }
+    return arr;
+  };
+
   return (
     <div className='text-white'
       style={{
@@ -96,10 +119,6 @@ const CustomerReview = () => {
                 slidesPerView: 3,
                 spaceBetween: 30,
               },
-              1024: {
-                slidesPerView: 4,
-                spaceBetween: 10,
-              },
             }}
             className="mySwiper"
           >
@@ -114,17 +133,17 @@ const CustomerReview = () => {
                       justifyContent: 'center'
                     }}
                   >
-                    <div className='flex flex-col items-center w-72 h-96 p-10 rounded-lg'
+                    <div className='flex flex-col items-center h-80 p-10 rounded-lg'
                       style={{
                         background: 'linear-gradient(135deg, #1A202A 0%, #101319 100%)',
+                        width: '28rem'
                       }}
                     >
                       <div className='top flex gap-6'>
-                        <div className='flex items-center justify-center'>
+                        <div className='flex items-center'>
                           <Image
                             className='rounded-full'
-                            src={'/user.jpeg'} alt='user'
-                            // fill={true} 
+                            src={item.imgSrc} alt='user'
                             width={80}
                             height={80}
                           />
@@ -132,10 +151,16 @@ const CustomerReview = () => {
                         <div className='details flex flex-col'>
                           <h3 className='text-xl font-bold mt-4'>{item.title}</h3>
                           <p>{item.role}</p>
-                          <Image src={'/star.jpg'} height={20} width={50} alt='ratings' />
+                          <div className='flex gap-1'>
+                            {genRatings(item.ratings).map((item, id) =>
+                              item === 'full' ?
+                                <BsStarFill key={id} className='text-[#FBBC04]' /> :
+                                <BsStarHalf key={id} className='text-[#FBBC04]' />
+                            )}
+                          </div>
                         </div>
                       </div>
-                      <p className='text-center text-white mt-6'>{item.desc}</p>
+                      <p className='text-white mt-6'>{item.desc}</p>
                     </div>
                   </SwiperSlide>
                 </div>
