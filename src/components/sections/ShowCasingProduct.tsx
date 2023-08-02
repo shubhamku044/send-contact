@@ -1,24 +1,27 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+import styles from './ShowCasingProduct.module.css'
 
 const ShowCasingProduct = () => {
   return (
-    <section className='bg-gray-medium text-white'>
+    <section className='bg-gray-medium text-white overflow-hidden'>
       <div className='section flex flex-col items-center md:justify-around md:flex-row'>
-        <div className='left relative'>
-          <Image src={'/phone-and-hand.png'}
-            alt='Send' className='max-w-[500px] relative z-10'
-            height={300}
-            width={400}
-            style={{ transform: 'scaleX(-1)', transformOrigin: 'top' }}
-          />
-          <Image src={'/ShowcasePhone.gif'}
-            alt='Send' className='max-w-[500px] absolute z-0'
-            height={50}
-            width={150}
-            style={{ left: '47.2%', top: '1.9%' }}
-          />
+        <div className='left relative w-full '>
+          <div className={styles.imageWrap + " relative m-auto"}>
+            <Image src={'/phone-and-hand.png'}
+              alt='Send' className='max-w-[500px] relative z-10 right1/2'
+              height={300}
+              width={400}
+              style={{ transform: 'scaleX(-1)', transformOrigin: 'top' }}
+            />
+            <Image src={'/ShowcasePhone.gif'}
+              alt='Send' className='max-w-[500px] absolute z-0'
+              height={50}
+              width={150}
+              style={{ left: '11.8rem', top: '1.0rem' }}
+            />
+          </div>
         </div>
         <div className='right max-w-2xl flex items-start justify-start flex-col  '>
           <h1 className='text-white text-3xl sm:text-5xl font-bold'>

@@ -41,7 +41,7 @@ const BluetoothDiscover = () => {
               className={styles.BluetoothText__header + ' text-3xl sm:text-5xl text-white font-bold text-left'}
               style={{ lineHeight: '1.2' }}
             >
-              <span className="text-custom-blue">Bluetooth</span>
+              <span className="text-custom-blue">Bluetooth </span>
               <div className="BluetoothText__discovery">Discovery{' '}
                 <div className={styles.BluetoothText__line + ' h-1 bg-custom-blue rounded w-36 '} />
               </div>

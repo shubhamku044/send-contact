@@ -5,7 +5,7 @@ import React from 'react';
 const SellStreamlined = () => {
   return (
     <section>
-      <div className='section flex flex-col-reverse items-center justify-between md:flex-row'>
+      <div className='section flex flex-col-reverse items-center justify-between md:flex-row overflow-hidden'>
         <div className='right max-w-2xl flex items-start justify-start flex-col'>
           <h1 className='text-3xl sm:text-5xl font-bold' style={{ lineHeight: '1.2' }}>
             <span className='text-custom-blue'>Sell
