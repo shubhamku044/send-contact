@@ -142,7 +142,39 @@
         transform: translate3d(-50%, 50%, 0);
     }
 }
-@media screen and (max-width: 650px)
+.BluetoothText
+{
+    position :relative;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    z-index: 10;
+}
+.BluetoothText__header
+{
+    position: relative;
+    margin-left: 6rem;
+    top: 2.5rem;
+}
+.BluetoothText__line
+{
+   position: relative; 
+   top: 0.0rem;
+   left: 0rem;
+}
+.BluetoothText__discovery
+{
+    display: inline-block;
+}
+.BluetoothText__description
+{
+    position: relative;
+    width: 50%;
+    top: 2.5rem;
+    margin-left: auto;
+    margin-right: 6rem;
+}
+@media screen and (max-width: 750px)
 {
     .image
     {
@@ -152,5 +184,20 @@
     {
         position: absolute !important;
         left: 10% !important;
+    }
+    .BluetoothText
+    {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .BluetoothText__description
+    {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .BluetoothText__header
+    {
+        margin: 0 auto 1.5rem auto;
+        width: 80%;
     }
 }
