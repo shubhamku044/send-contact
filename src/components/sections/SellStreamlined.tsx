@@ -23,7 +23,7 @@ const SellStreamlined = () => {
             you can enjoy a convenient and secure payment experience. Whether you&apos;re a small business
             or a budding entrepreneur, SendContact simplifies your online sales journey.
           </p>
-          <button className='bg-custom-blue text-base px-14 py-2 mt-4 text-white rounded-md mx-auto sm:mx-0'>
+          <button className='bg-custom-blue text-base px-14 py-2 mt-4 text-white rounded-md mx-auto sm:mx-0 animated-btn'>
             Download SendContact
           </button>
           <span className='text-base my-3 text-center mx-auto sm:mx-0'>Download SendContact App</span>
