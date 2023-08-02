@@ -17,7 +17,7 @@ const ShowCasingProduct = () => {
             alt='Send' className='max-w-[500px] absolute z-0'
             height={50}
             width={150}
-            style={{ left: "47.2%", top: "1.9%" }}
+            style={{ left: '47.2%', top: '1.9%' }}
           />
         </div>
         <div className='right max-w-2xl flex items-start justify-start flex-col  '>

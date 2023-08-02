@@ -49,7 +49,7 @@ const SellStreamlined = () => {
             alt='Send' className='max-w-[500px] absolute z-0'
             height={50}
             width={145}
-            style={{ left: "15%", top: "1.85%" }}
+            style={{ left: '15%', top: '1.85%' }}
           />
         </div>
       </div>
