@@ -155,15 +155,16 @@
     position: relative;
     top: 2.5rem;
 }
-.BluetoothText__line
-{
-   position: relative; 
-   top: 0.0rem;
-   left: 0rem;
-}
 .BluetoothText__discovery
 {
     display: inline-block;
+    position: relative;
+}
+.BluetoothText__line
+{
+   position: absolute; 
+   top: 2.0rem;
+   left: 0rem;
 }
 .BluetoothText__description
 {
@@ -187,6 +188,7 @@
     {
         flex-direction: column;
         justify-content: space-around;
+        top: -3.3rem;
     }
     .BluetoothText__description
     {
@@ -195,7 +197,16 @@
     }
     .BluetoothText__header
     {
-        margin: 0 auto 1.5rem auto;
+        margin: 0 auto 0.5rem auto;
         width: 100%;
+    }
+}
+@media screen and (min-width: 640px)
+{
+    .BluetoothText__line
+    {
+       position: absolute; 
+       top: 3rem;
+       left: 0rem;
     }
 }

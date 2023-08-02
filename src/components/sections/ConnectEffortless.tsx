@@ -87,7 +87,7 @@ const ConnectEffortless = () => {
             Download SendContact
           </button>
         </div>
-        <div className='left relative' ref={ref}>
+        <div className='left relative w-full overflow-hidden' ref={ref}>
           <div className={styles.HandWrap}>
             <Image src={'/hand-and-card.png'}
               alt='Send' className='bg-blend max-w-[32rem] relative z-0'
