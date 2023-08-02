@@ -25,6 +25,7 @@
     width: 91vw;
     height: 50vw;
     transform: translate3d(-50%, 50%, 0);
+    overflow: visible;
 }
 .ContainerCircles {
     position: absolute;
@@ -147,5 +148,13 @@
         bottom: 50%;
         /* border: solid  yellow 5px; */
         transform: translate3d(-50%, 50%, 0);
+    }
+}
+@media screen and (max-width: 650px)
+{
+    .image
+    {
+        position: absolute;
+        object-position: 35% 50%;
     }
 }
