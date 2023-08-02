@@ -65,7 +65,7 @@ const Header = () => {
             </ul>
           </div>
           <div className="flex items-stretch gap-4">
-            <button className={`${styles.button} bg-custom-blue px-8`}>
+            <button className={`${styles.button} bg-custom-blue px-4 sm:px-8`}>
               Sign up
             </button>
             <button
