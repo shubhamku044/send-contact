@@ -37,7 +37,7 @@ const ShowCasingProduct = () => {
             when it comes to presenting yourself and your business in the best light possible.
           </p>
           <Link href={`#`}>
-            <button className='bg-custom-blue text-base px-14 py-2 mt-4 text-white rounded-md'>
+            <button className='bg-custom-blue text-base px-14 py-2 mt-4 text-white rounded-md animated-btn'>
               Download SendContact
             </button>
           </Link>
