@@ -1,14 +1,14 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import styles from './ShowCasingProduct.module.css'
+import styles from './ShowCasingProduct.module.css';
 
 const ShowCasingProduct = () => {
   return (
     <section className='bg-gray-medium text-white overflow-hidden'>
       <div className='section flex flex-col items-center md:justify-around md:flex-row'>
         <div className='left relative w-full '>
-          <div className={styles.imageWrap + " relative m-auto"}>
+          <div className={styles.imageWrap + ' relative m-auto'}>
             <Image src={'/phone-and-hand.png'}
               alt='Send' className='max-w-[500px] relative z-10 right1/2'
               height={300}
