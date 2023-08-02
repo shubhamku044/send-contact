@@ -13,7 +13,7 @@ const BluetoothDiscover = () => {
         <div className='overflow-hidden'>
           <Image
             className={styles.image}
-            src={'/bg.gif'}
+            src={'/bg-not-mobile.png'}
             objectFit="cover"
             alt={''}
             fill={true}
@@ -26,9 +26,16 @@ const BluetoothDiscover = () => {
               <div className={styles.StrCircle2}></div>
               <div className={styles.StrCircle3}></div>
             </div>
+            <Image
+              className={styles.phoneImage}
+              src={'/mobile.gif'}
+              alt={''}
+              objectFit="contain"
+              fill={true}
+            />
           </div>
         </div>
-        <div className="relative flex flex-row justify-between">
+        <div className="relative flex flex-row justify-between z-10">
           <div>
             <h1
               className="relative top-9 text-3xl sm:text-5xl text-white font-bold text-left"
