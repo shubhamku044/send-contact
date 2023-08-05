@@ -5,7 +5,7 @@ const Hero = () => {
     <section
       className='hero'
     >
-      <div className='section h-full flex items-start md:items-center'>
+      <div className='section h-full flex items-start md:items-center md:justify-center'>
         <div className='text-3xl mt-20 md:mt-20 md:text-5xl px-4' style={{ lineHeight: '1.2' }}>
           <h1 className='font-bold text-custom-blue'>SendContact</h1>
           <p className='text-white'>Transform the way <br />you connect, present,<br /> and sell -</p>

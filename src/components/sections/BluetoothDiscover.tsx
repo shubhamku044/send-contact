@@ -14,9 +14,9 @@ const BluetoothDiscover = () => {
           <Image
             className={styles.image}
             src={'/bg-not-mobile.png'}
-            objectFit="cover"
             alt={''}
             fill={true}
+            style={{ objectFit: 'cover' }}
           />
           <div
             className={styles.CirclesWrap}
@@ -30,8 +30,8 @@ const BluetoothDiscover = () => {
               className={styles.phoneImage}
               src={'/mobile.gif'}
               alt={''}
-              objectFit="contain"
               fill={true}
+              style={{ objectFit: 'contain' }}
             />
           </div>
         </div>

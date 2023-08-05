@@ -2,24 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-}
-
 .section {
   @apply max-w-7xl mx-auto px-4 py-10 md:py-28;
 }
 
 .hero {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.10) 0%, rgba(0, 0, 0, 0.10) 100%), linear-gradient(180deg, rgba(0, 0, 0, 0.50) 35.94%, rgba(0, 0, 0, 0.00) 100%), url("/hero_bg-mobile.png"), lightgray -46.031px -1.228px / 121.926% 116.15% no-repeat;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.10) 0%, rgba(0, 0, 0, 0.10) 100%), linear-gradient(180deg, rgba(0, 0, 0, 0.50) 35.94%, rgba(0, 0, 0, 0.00) 100%), url("/hero-gif.gif"), lightgray -46.031px -1.228px / 121.926% 116.15% no-repeat;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: top left;
   height: 750px;
 }
 
 @media screen and (min-width: 768px) {
   .hero {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.10) 0%, rgba(0, 0, 0, 0.10) 100%), linear-gradient(180deg, rgba(0, 0, 0, 0.50) 35.94%, rgba(0, 0, 0, 0.00) 100%), url("/hero_bg.png"), lightgray -46.031px -1.228px / 121.926% 116.15% no-repeat;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.10) 0%, rgba(0, 0, 0, 0.10) 100%), linear-gradient(180deg, rgba(0, 0, 0, 0.50) 35.94%, rgba(0, 0, 0, 0.00) 100%), url("/hero-gif.gif"), lightgray -46.031px -1.228px / 121.926% 116.15% no-repeat;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

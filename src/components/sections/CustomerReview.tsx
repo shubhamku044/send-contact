@@ -122,9 +122,9 @@ const CustomerReview = () => {
             }}
             className="mySwiper"
           >
-            {data.map((item, id) => {
+            {data.map((item) => {
               return (
-                <div className='item' key={id}>
+                <div className='item' key={item.id}>
                   <SwiperSlide
                     className="swiper__slide"
                     style={{
