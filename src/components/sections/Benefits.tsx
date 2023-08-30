@@ -111,8 +111,8 @@ const Benefits = () => {
           </div>
         </div>
       </div>
-      <div>
-        <div className="section bg-gray-100 gap-8 flex flex-col md:flex-row items-center">
+      <div className='bg-gray-100'>
+        <div className="section gap-8 flex flex-col md:flex-row items-center">
           <div
             className=""
             style={{
