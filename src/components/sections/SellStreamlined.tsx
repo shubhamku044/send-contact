@@ -10,7 +10,7 @@ const SellStreamlined = () => {
           <h1 className='text-3xl sm:text-5xl font-bold' style={{ lineHeight: '1.2' }}>
             <span className='text-custom-blue'>Sell
             </span> - Streamlined Online <br />
-            Sales Made Simple
+            Sales Made Simple & Magical
           </h1>
           <div className='h-1 bg-custom-blue rounded w-32 mt-4 mb-4' />
           <p className='text-left tracking-tight sm:text-lg'>

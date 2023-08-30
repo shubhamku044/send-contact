@@ -11,6 +11,7 @@ import SellStreamlined from './SellStreamlined';
 import SendContactBenefits from './SendContactBenefits';
 import ShowCasingProduct from './ShowCasingProduct';
 import SolutionForSociety from './SolutionForSociety';
+import Benefits from './Benefits';
 
 export {
   Hero,
@@ -25,5 +26,6 @@ export {
   SellStreamlined,
   SendContactBenefits,
   ShowCasingProduct,
-  SolutionForSociety
+  SolutionForSociety,
+  Benefits
 };

@@ -24,10 +24,10 @@ const ShowCasingProduct = () => {
           </div>
         </div>
         <div className='right max-w-2xl flex items-start justify-start flex-col  '>
-          <h1 className='text-white text-3xl sm:text-5xl font-bold'>
+          <h1 className='text-white text-3xl sm:text-5xl font-bold' style={{ lineHeight: 1.2 }}>
             <span className='text-custom-blue'>Present</span>&nbsp;
             - Showcasing Your<br />
-            Best Self And Products
+            Service & Products Beautifully
           </h1>
           <div className='h-1 bg-custom-blue rounded w-32 mt-4 mb-4' />
           <p className='text-left text-base sm:text-lg'>

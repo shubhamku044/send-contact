@@ -3,11 +3,11 @@ import React from 'react';
 
 const SolutionForSociety = () => {
   return (
-    <section>
-      <div className='section flex flex-col-reverse md:flex-row items-center gap-8 overflow-hidden'>
+    <section className='bg-gray-200'>
+      <div className='section flex flex-col-reverse md:flex-row justify-between items-center gap-8 overflow-hidden'>
         <div className='left'>
-          <div style={{ aspectRatio: '373/282' }} className='relative h-72'>
-            <Image src={'/mountain.jpeg'}
+          <div style={{ aspectRatio: '373/282' }} className='relative h-72 sm:h-80 lg:h-96'>
+            <Image src={'/mountain.png'}
               alt='Send' className='bg-blend'
               fill={true}
             />

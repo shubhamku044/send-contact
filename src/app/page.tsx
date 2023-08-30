@@ -12,7 +12,8 @@ import {
   SellStreamlined,
   SendContactBenefits,
   ShowCasingProduct,
-  SolutionForSociety
+  SolutionForSociety,
+  Benefits
 } from '@/components/sections';
 
 export default function Home() {
@@ -22,6 +23,7 @@ export default function Home() {
       <main className=''>
         <Hero />
         <DownloadSendContact />
+        <Benefits />
         <ConnectEffortless />
         <BluetoothDiscover />
         <ShowCasingProduct />

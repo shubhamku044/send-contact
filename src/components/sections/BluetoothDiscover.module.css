@@ -150,29 +150,18 @@
     justify-content: space-between;
     z-index: 10;
 }
-.BluetoothText__header
-{
-    position: relative;
-    top: 2.5rem;
+
+.BluetoothText__header::before {
+    content: "";
+    position: absolute;
+    bottom: -1rem;
+    left: 0;
+    width: 40%;
+    height: 2px;
+    background: #2D81FF;
+    border-radius: 4px;
 }
-.BluetoothText__discovery
-{
-    display: inline-block;
-    position: relative;
-}
-.BluetoothText__line
-{
-   position: absolute; 
-   top: 2.0rem;
-   left: 0rem;
-}
-.BluetoothText__description
-{
-    position: relative;
-    width: 50%;
-    top: 2.5rem;
-    margin-left: auto;
-}
+
 @media screen and (max-width: 750px)
 {
     .image
@@ -190,23 +179,9 @@
         justify-content: space-around;
         top: -3.3rem;
     }
-    .BluetoothText__description
-    {
-        width: 100%;
-        margin: 0 auto;
-    }
     .BluetoothText__header
     {
         margin: 0 auto 0.5rem auto;
         width: 100%;
-    }
-}
-@media screen and (min-width: 640px)
-{
-    .BluetoothText__line
-    {
-       position: absolute; 
-       top: 3rem;
-       left: 0rem;
     }
 }
