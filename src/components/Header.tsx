@@ -41,7 +41,7 @@ const Header = () => {
               <Link href={'/'}>
                 <li className="lg:px-4 p-2">Home</li>
               </Link>
-              <Link href={'/'}>
+              {/* <Link href={'/'}>
                 <li className="lg:px-4 p-2">Shop</li>
               </Link>
               <Link href={'/'}>
@@ -55,7 +55,7 @@ const Header = () => {
               </Link>
               <Link href={'/'}>
                 <li className="lg:px-4 p-2">Blog</li>
-              </Link>
+              </Link> */}
               <Link href={'/'}>
                 <li className="lg:px-4 p-2">Contact</li>
               </Link>
@@ -68,12 +68,12 @@ const Header = () => {
             <button className={`${styles.button} bg-custom-blue px-4 sm:px-8`}>
               Sign up
             </button>
-            <button
+            {/* <button
               className={`${styles.button} bg-[#242E3D] flex items-center gap-2`}
             >
               <AiOutlineShoppingCart className="h-6 w-6 sm:h-4 sm:w-4" />
               <span className="hidden sm:inline">Shop</span>
-            </button>
+            </button> */}
           </div>
         </div>
       </nav>

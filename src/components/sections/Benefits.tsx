@@ -93,19 +93,24 @@ const Benefits = () => {
             <h3 className="text-custom-blue text-4xl font-semibold">2. Schools And Oranizations:</h3>
             <span className='h-1 bg-custom-blue w-36 mt-4 inline-block rounded' />
             <div className='mt-4 flex flex-col gap-4 text-white'>
-              <p>
-                Streamline communication and collaboration within your educational institution or organization.
-                Our app allows you to share content, upload daily tasks for team members or students, and
-                securely exchange large files. By reducing reliance on big centralized social media platforms
-                like YouTube, Dropbox, or WeTransfer, you can ensure a more private and controlled environment.
-              </p>
               <h4 className='font-semibold text-custom-blue text-xl'>For students: Making new friends made simple and easy.</h4>
               <p>
-                Imagine you&apos;re in the cafeteria during lunchtime, and you spot a few people you&apos;d like to be
-                friends with, but it feels awkward to walk over and introduce yourself. Now, with the SendContact
-                app, you can magically &quot;break the ice.&quot; Simply turn on your SendContact app, and you&apos;ll
-                be able to see everyone in the room. All you have to do is select the person&apos;s virtual
-                card and click &quot;Send,&quot; and you&apos;re ready to make new friends without any pressure.
+                Imagine you&apos;re in the cafeteria during lunchtime, and you spot a few people you&apos;d like to be 
+                friends with, but it feels awkward to walk over and introduce yourself. Now, with the SendContact app, 
+                you can magically &quot;break the ice.&quot; Simply turn on your SendContact app, and you&apos;ll be 
+                able to see everyone in the room. All you have to do is select the person&apos;s virtual card and click 
+                &quot;Send,&quot; and you&apos;re ready to make new friends without any pressure.
+              </p>
+              <h4 className='font-semibold text-custom-blue text-xl'>
+                For School: Sharing files without big tech looking over your shoulder.
+              </h4>
+              <p>
+                Streamline communication and collaboration within your 
+                educational institution or organization. Our app allows 
+                you to share content, upload daily tasks  and securely exchange large files. 
+                By reducing reliance on big centralized social media 
+                platforms like YouTube, Dropbox, or WeTransfer, you can 
+                ensure a more private and controlled environment.
               </p>
             </div>
           </div>
