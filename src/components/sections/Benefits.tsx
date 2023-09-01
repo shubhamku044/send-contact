@@ -90,7 +90,7 @@ const Benefits = () => {
               flex: 1
             }}
           >
-            <h3 className="text-custom-blue text-4xl font-semibold">2. Schools And Oranizations:</h3>
+            <h3 className="text-custom-blue text-4xl font-semibold">2. Students and Schools :</h3>
             <span className='h-1 bg-custom-blue w-36 mt-4 inline-block rounded' />
             <div className='mt-4 flex flex-col gap-4 text-white'>
               <h4 className='font-semibold text-custom-blue text-xl'>For students: Making new friends made simple and easy.</h4>

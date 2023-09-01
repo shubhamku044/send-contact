@@ -90,7 +90,8 @@ const CustomerReview = () => {
   };
 
   return (
-    <div className='text-white'
+    <div 
+      className='text-white'
       style={{
         background: 'linear-gradient(180deg, #242E3D 0%, #161B23 100%)'
       }}

@@ -87,7 +87,9 @@ const Accordion = ({ question, answer }: { question?: string; answer?: string; }
 const FAQ = () => {
 
   return (
-    <div className='bg-gray-medium text-white'>
+    <div
+      className='bg-gray-medium text-white'
+    >
       <section className='section border-b-4 border-b-gray-700'>
         <h2 className='text-center text-5xl'>Frequently Asked Questions</h2>
         <div className='mt-16 gap-4 flex flex-col'>

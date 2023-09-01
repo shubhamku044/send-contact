@@ -33,7 +33,7 @@ export default function Home() {
         <BluetoothProblem />
         <SolutionForSociety />
         <JoinMission />
-        <CustomerReview />
+        {/* <CustomerReview /> */}
         <FAQ />
       </main>
       <Footer />

@@ -3,7 +3,12 @@ import React from 'react';
 
 const JoinMission = () => {
   return (
-    <section className='bg-gray-medium text-white'>
+    <section
+      style={{
+        background: 'linear-gradient(0deg, #242E3D 0%, #161B23 100%)'
+      }}
+      className='bg-gray-medium text-white'
+    >
       <div className='section flex flex-col justify-around items-center md:flex-row'>
         <div className='left max-w-[600px]'>
           <h1 style={{ lineHeight: '1.2' }} className='capitalize text-xl md:text-2xl lg:text-5xl font-bold'>
