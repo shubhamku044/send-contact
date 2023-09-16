@@ -1,8 +1,6 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Sofia_Sans } from 'next/font/google';
-
-const sofiaSans = Sofia_Sans({ subsets: ['latin'] });
+import { sofiaSans } from './font';
 
 export const metadata: Metadata = {
   title: 'Send Contact',

@@ -11,23 +11,23 @@ const DownloadSendContact = () => {
         </div>
         <div className='right max-w-xl'>
           <h1 className='font-bold text-3xl lg:text-5xl' style={{ lineHeight: 1.2 }}>
-            Design For Business,<br />Organizations, Individuals<br />Or Just Networking With <br />Friends -&nbsp;
+            Designed For Business,<br />Organizations, Individuals<br />Or Just Networking With <br />Friends -&nbsp;
             <span className='text-custom-blue'>Simple And Magical.</span>
           </h1>
           <div className='h-1 bg-custom-blue rounded w-28 mt-4 hidden md:block' />
           <div className='mt-6 md:mt-8 lg:mt-12'>
             <span className='text-base'>Download SendContact App</span>
             <div className='social-media mt-4 flex gap-4'>
-              <Link href={'/'}>
+              <Link target='_blank' href={'https://apps.apple.com/us/app/sendcontact/id963951753'}>
                 <div>
                   <Image src={'/App_Store.svg'} alt='App store icon' width={163} height={48} />
                 </div>
               </Link>
-              <Link href={'/'}>
+              {/* <Link href={'/'}>
                 <div>
                   <Image src={'/Google_Play.svg'} alt='App store icon' width={163} height={48} />
                 </div>
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>

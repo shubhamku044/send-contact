@@ -26,7 +26,7 @@ const Header = () => {
           <Link href={'/'}>
             <div
               className="relative w-32 sm:w-40 ml-10 lg:ml-0"
-              style={{ aspectRatio: '188.6/42.1' }}
+              style={{ aspectRatio: '188.6/42.1', height: 'auto' }}
             >
               <Image
                 src={'/logo.svg'}

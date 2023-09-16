@@ -1,45 +1,14 @@
 'use client';
 import Image from 'next/image';
-import React, { useEffect, useState } from 'react';
-import img1 from '../../../public/decentralized/01-01.jpg';
-import img2 from '../../../public/decentralized/01-02.jpg';
-import img3 from '../../../public/decentralized/01-03.jpg';
-import img4 from '../../../public/decentralized/01-04.jpg';
-import img5 from '../../../public/decentralized/01-05.jpg';
-import img6 from '../../../public/decentralized/01-06.jpg';
-
-const imageList = [
-  img1,
-  img2,
-  img3,
-  img4,
-  img5,
-  img6,
-];
+import React from 'react';
 
 const DecentralizedOS = () => {
-  const [currentImage, setCurrentImage] = useState(1);
-  const [image, setImage] = useState(img1);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      if (currentImage === 6) {
-        setCurrentImage(1);
-        setImage(img1);
-      } else {
-        setCurrentImage(currentImage + 1);
-        setImage(imageList[currentImage]);
-      }
-    }, 1000);
-    return () => clearInterval(interval);
-  }, [currentImage]);
-
   return (
     <section>
       <div className='section flex flex-col-reverse items-center justify-between md:flex-row'>
         <div className='left'>
           <Image
-            src={image}
+            src={'/decentralized.webp'}
             alt='Send' className='bg-blend sm:max-w-[32rem]'
             height={500}
             width={500}

@@ -89,12 +89,12 @@ const ConnectEffortless = () => {
         </div>
         <div className='left relative' ref={ref}>
           <div className={styles.HandWrap}>
-            <Image src={'/hand-and-card.png'}
+            <Image src={'/hand-and-card.webp'}
               alt='Send' className='bg-blend max-w-[32rem] relative z-0'
               height={300}
               width={400}
             />
-            <Image src={'/hand-and-mobile.png'}
+            <Image src={'/hand-and-mobile.webp'}
               alt='Send' className={getHandStyle()}
               height={300}
               width={400}

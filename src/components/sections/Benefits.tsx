@@ -19,7 +19,7 @@ const Benefits = () => {
           <p className="text-white text-lg text-center mt-4 md:mt-6">
             At Send Contact, we have developed a powerful and versatile application
             designed to cater to a wide range of users. Our app offe
-            and benefits that can be of great value to various entities and individuals.
+            and benefits that can be of great value to various business and individuals.
             Here are the primary groups that can benefit from using our app:
           </p>
         </div>
@@ -95,21 +95,21 @@ const Benefits = () => {
             <div className='mt-4 flex flex-col gap-4 text-white'>
               <h4 className='font-semibold text-custom-blue text-xl'>For students: Making new friends made simple and easy.</h4>
               <p>
-                Imagine you&apos;re in the cafeteria during lunchtime, and you spot a few people you&apos;d like to be 
-                friends with, but it feels awkward to walk over and introduce yourself. Now, with the SendContact app, 
-                you can magically &quot;break the ice.&quot; Simply turn on your SendContact app, and you&apos;ll be 
-                able to see everyone in the room. All you have to do is select the person&apos;s virtual card and click 
+                Imagine you&apos;re in the cafeteria during lunchtime, and you spot a few people you&apos;d like to be
+                friends with, but it feels awkward to walk over and introduce yourself. Now, with the SendContact app,
+                you can magically &quot;break the ice.&quot; Simply turn on your SendContact app, and you&apos;ll be
+                able to see everyone in the room. All you have to do is select the person&apos;s virtual card and click
                 &quot;Send,&quot; and you&apos;re ready to make new friends without any pressure.
               </p>
               <h4 className='font-semibold text-custom-blue text-xl'>
                 For School: Sharing files without big tech looking over your shoulder.
               </h4>
               <p>
-                Streamline communication and collaboration within your 
-                educational institution or organization. Our app allows 
-                you to share content, upload daily tasks  and securely exchange large files. 
-                By reducing reliance on big centralized social media 
-                platforms like YouTube, Dropbox, or WeTransfer, you can 
+                Streamline communication and collaboration within your
+                educational institution or organization. Our app allows
+                you to share content, upload daily tasks  and securely exchange large files.
+                By reducing reliance on big centralized social media
+                platforms like YouTube, Dropbox, or WeTransfer, you can
                 ensure a more private and controlled environment.
               </p>
             </div>

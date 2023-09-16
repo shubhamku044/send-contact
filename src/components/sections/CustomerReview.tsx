@@ -15,7 +15,7 @@ const data = [
     role: 'CEO, Grown Management',
     ratings: 4.5,
     desc: '\“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.\”',
-    imgSrc: '/users/michael.svg'
+    imgSrc: '/users/michael.png'
   },
   {
     id: 2,
@@ -23,7 +23,7 @@ const data = [
     role: 'Designer',
     ratings: 5,
     desc: '\“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.\”',
-    imgSrc: '/users/sarah.svg'
+    imgSrc: '/users/sarah.png'
   },
   {
     id: 3,
@@ -31,7 +31,7 @@ const data = [
     role: 'Architect',
     ratings: 4.5,
     desc: '\“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.\”',
-    imgSrc: '/users/john.svg'
+    imgSrc: '/users/john.png'
   },
   {
     id: 4,
@@ -39,7 +39,7 @@ const data = [
     role: 'Designer',
     ratings: 5,
     desc: '\“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.\”',
-    imgSrc: '/users/sarah.svg'
+    imgSrc: '/users/sarah.png'
   },
   {
     id: 5,
@@ -47,7 +47,7 @@ const data = [
     role: 'CEO, Grown Management',
     ratings: 4.5,
     desc: '\“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.\”',
-    imgSrc: '/users/michael.svg'
+    imgSrc: '/users/michael.png'
   },
   {
     id: 6,
@@ -55,7 +55,7 @@ const data = [
     role: 'Architect',
     ratings: 4.5,
     desc: '\“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.\”',
-    imgSrc: '/users/john.svg'
+    imgSrc: '/users/john.png'
   },
   {
     id: 7,
@@ -63,7 +63,7 @@ const data = [
     role: 'Designer',
     ratings: 5,
     desc: '\“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.\”',
-    imgSrc: '/users/sarah.svg'
+    imgSrc: '/users/sarah.png'
   },
 ];
 
@@ -90,7 +90,7 @@ const CustomerReview = () => {
   };
 
   return (
-    <div 
+    <div
       className='text-white'
       style={{
         background: 'linear-gradient(180deg, #242E3D 0%, #161B23 100%)'
@@ -125,7 +125,7 @@ const CustomerReview = () => {
           >
             {data.map((item) => {
               return (
-                <div className='item' key={item.id}>
+                <div className='item' key={`${item.id}`}>
                   <SwiperSlide
                     className="swiper__slide"
                     style={{
@@ -153,10 +153,11 @@ const CustomerReview = () => {
                           <h3 className='text-xl font-bold mt-4'>{item.title}</h3>
                           <p>{item.role}</p>
                           <div className='flex gap-1'>
-                            {genRatings(item.ratings).map((item, id) =>
-                              item === 'full' ?
-                                <BsStarFill key={id} className='text-[#FBBC04]' /> :
-                                <BsStarHalf key={id} className='text-[#FBBC04]' />
+                            {genRatings(item.ratings).map((rating, id) => {
+                              return rating === 'full' ?
+                                <BsStarFill key={`${item.id}-${id}`} className='text-[#FBBC04]' /> :
+                                <BsStarHalf key={`${item.id}-${id}`} className='text-[#FBBC04]' />;
+                            }
                             )}
                           </div>
                         </div>

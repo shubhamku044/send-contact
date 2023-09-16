@@ -1,26 +1,8 @@
 'use client';
 import Image from 'next/image';
-import React, { useEffect, useState } from 'react';
-import Bluetooth1 from '../../../public/Bluetooth1.png';
-import Bluetooth2 from '../../../public/Bluetooth2.png';
+import React from 'react';
 
 const BluetoothProblem = () => {
-  const [currentImage, setCurrentImage] = useState(1);
-  const [image, setImage] = useState(Bluetooth1);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      if (currentImage === 2) {
-        setCurrentImage(1);
-        setImage(Bluetooth1);
-      } else {
-        setCurrentImage(currentImage + 1);
-        setImage(Bluetooth2);
-      }
-    }, 1000);
-
-    return () => clearInterval(interval);
-  }, [currentImage]);
 
   return (
     <section className='bg-gray-medium text-white'>
@@ -46,7 +28,7 @@ const BluetoothProblem = () => {
         </div>
         <div className='right'>
           <Image
-            src={image}
+            src={'/bluetooth.webp'}
             alt='Send'
             className='bg-blend max-w-[400px]'
             height={200}

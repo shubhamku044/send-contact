@@ -9,37 +9,37 @@ import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai';
 
 const data = [
   {
-    id: 1,
+    id: 21,
     title: 'Time-saving',
     icon: '/benefits/Time-saving.svg',
     desc: 'Our app streamlines your workflow and saves you time on repetitive tasks like lead generation and content management.'
   },
   {
-    id: 2,
+    id: 22,
     title: 'User-friendly',
     icon: '/benefits/User-friendly.svg',
     desc: "Our app is easy to use, even if you don't have technical expertise."
   },
   {
-    id: 3,
+    id: 23,
     title: 'Cost-effective',
     icon: '/benefits/Cost-effective.svg',
     desc: 'Our app saves your time and money without the need to pay for a website or developer to maintain it, so you can focus on growing your business.'
   },
   {
-    id: 4,
+    id: 24,
     title: 'Scalable',
     icon: '/benefits/Scalable.svg',
     desc: 'Our app is designed to grow with your business and adapt to your changing needs. With the ability to add multiple virtual cards, mini-websites, and payment links'
   },
   {
-    id: 5,
+    id: 25,
     title: 'Time-saving',
     icon: '/benefits/Time-saving.svg',
     desc: 'Our app streamlines your workflow and saves you time on repetitive tasks like lead generation and content management.'
   },
   {
-    id: 6,
+    id: 26,
     title: 'User-friendly',
     icon: '/benefits/User-friendly.svg',
     desc: "Our app is easy to use, even if you don't have technical expertise."
