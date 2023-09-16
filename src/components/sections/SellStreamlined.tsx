@@ -23,21 +23,22 @@ const SellStreamlined = () => {
             you can enjoy a convenient and secure payment experience. Whether you&apos;re a small business
             or a budding entrepreneur, SendContact simplifies your online sales journey.
           </p>
-          <button className='bg-custom-blue text-base px-14 py-2 mt-4 text-white rounded-md mx-auto sm:mx-0 animated-btn'>
+          <Link target='_blank' href='https://apps.apple.com/us/app/sendcontact/id963951753' className='bg-custom-blue text-base px-14 py-2 mt-4 text-white rounded-md animated-btn'>
             Download SendContact
-          </button>
+          </Link>
           <span className='text-base my-3 text-center mx-auto sm:mx-0'>Download SendContact App</span>
           <div className='w-[100%] sm:w-auto social media flex flex-col items-center gap-4 sm:gap-4  my-3 sm:flex-row '>
-            <Link href={'/'}>
+            <Link href={'https://apps.apple.com/us/app/sendcontact/id963951753'} target='_blank'>
               <div>
                 <Image src={'/App_Store.svg'} alt='App store icon' width={163} height={48} />
               </div>
             </Link>
-            <Link href={'/'}>
+            {/* <Link href={'/'}>
               <div>
                 <Image src={'/Google_Play.svg'} alt='App store icon' width={163} height={48} />
               </div>
-            </Link></div>
+            </Link> */}
+          </div>
         </div>
         <div className='left relative z-10'>
           <Image src={'/phone-and-hand.webp'}
