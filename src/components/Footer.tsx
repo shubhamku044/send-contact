@@ -64,24 +64,24 @@ const Footer = () => {
                 <li><Link href={'mailto:contact@sendcontact.com'} target='_blank'>Contact Us</Link></li>
                 <li className='block md:hidden'>Download</li>
                 <li className='block md:hidden'>
-                  <Link href={'/'}>
+                  <Link target={'_blank'} href={'https://apps.apple.com/us/app/sendcontact/id963951753'}>
                     <div>
                       <Image src={'/App_Store.svg'} alt='App store icon' width={163} height={48} />
                     </div>
                   </Link>
                 </li>
-                <li className='block md:hidden'>
-                  <Link href={'https://apps.apple.com/us/app/sendcontact/id963951753'}>
+                {/* <li className='block md:hidden'>
+                  <Link href={''}>
                     <div>
                       <Image src={'/Google_Play.svg'} alt='App store icon' width={163} height={48} />
                     </div>
                   </Link>
-                </li>
+                </li> */}
               </ul>
             </div>
             <div className='md:flex hidden flex-col gap-4'>
               <p className='font-semibold text-lg'>Download Sendcontact App</p>
-              <Link target='_blank' href={'/'}>
+              <Link target='_blank' href={'https://apps.apple.com/us/app/sendcontact/id963951753'}>
                 <div>
                   <Image src={'/App_Store.svg'} alt='App store icon' width={163} height={48} />
                 </div>
